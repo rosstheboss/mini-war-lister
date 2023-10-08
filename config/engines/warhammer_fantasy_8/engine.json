@@ -237,27 +237,74 @@
   "keywords": [
     {
       "id": "kw_general",
-      "keyword": "General"
+      "name": "General"
     },
     {
       "id": "kw_mounted",
-      "keyword": "Mounted"
+      "name": "Mounted"
     },
     {
       "id": "kw_standardBearer",
-      "keyword": "Standard Bearer"
+      "name": "Standard Bearer"
     },
     {
       "id": "kw_musician",
-      "keyword": "Musician"
+      "name": "Musician"
     },
     {
       "id": "kw_wizard",
-      "keyword": "Wizard"
+      "name": "Wizard"
     },
     {
       "id": "kw_character",
-      "keyword": "Character"
+      "name": "Character"
+    },
+    {
+      "id": "kw_specialCharacter",
+      "name": "Special Character"
+    }
+  ],
+  "titles": [
+    {
+      "id": "title_equipment",
+      "name": "Equipment",
+      "allowConditionalInput": true
+    },
+    {
+      "id": "title_profile",
+      "name": "Profile"
+    },
+    {
+      "id": "title_troopType",
+      "name": "Troop Type"
+    },
+    {
+      "id": "title_magicItems",
+      "name": "Magic Items",
+      "allowConditionalInput": true
+    },
+    {
+      "id": "title_specialRules",
+      "name": "Special Rules",
+      "allowConditionalInput": true
+    },
+    {
+      "id": "title_options",
+      "name": "Options",
+      "allowConditionalInput": true
+    },
+    {
+      "id": "title_magic",
+      "name": "Magic",
+      "allowConditionalInput": true
+    },
+    {
+      "id": "title_mount",
+      "name": "Mount"
+    },
+    {
+      "id": "title_unitSize",
+      "name": "Unit Size"
     }
   ],
   "specialRules": [
@@ -4430,23 +4477,23 @@
   ],
   "compositionCategories": [
     {
-      "id": "cc_co",
+      "id": "cc_core",
       "name": "Core"
     },
     {
-      "id": "cc_he",
+      "id": "cc_heroes",
       "name": "Heroes"
     },
     {
-      "id": "cc_lo",
+      "id": "cc_lords",
       "name": "Lords"
     },
     {
-      "id": "cc_sp",
+      "id": "cc_special",
       "name": "Special"
     },
     {
-      "id": "cc_ra",
+      "id": "cc_rare",
       "name": "Rare"
     }
   ],

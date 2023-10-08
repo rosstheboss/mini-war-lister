@@ -51,7 +51,7 @@
       "description": "Models with this special rule have a 6+ war save against non-magic shooting attacks that do not use templates.",
       "stats": [
         {
-          "id": "st_wd",
+          "id": "stat_wd",
           "value": 6,
           "displayAsConditional": true,
           "conditionalDescription": "* 6+ ward against non-magic shooting attacks not using templates."
@@ -69,7 +69,7 @@
       "description": "A Sea Helm mounted on a Lothern Skycutter (and his Lothern Skycutter) has a 4+ ward save against shooting attacks. Furthermore, when mounted on a Lothern Skycutter, a Sea Helm re-rolls failed Dangerous Terrain tests.",
       "stats": [
         {
-          "id": "st_wd",
+          "id": "stat_wd",
           "value": 4,
           "displayAsConditional": true,
           "conditionalDescription": "* 4+ ward save against shooting when mounted on Lothern Skycutter."
@@ -98,11 +98,11 @@
     },
     {
       "id": "he_sr_witnessToDestiny",
-      "name": "Witness To Destiny",
+      "name": "Witness to Destiny",
       "description": "A model with this special rule has a 4+ ward save.",
       "stats": [
         {
-          "id": "st_wd",
+          "id": "stat_wd",
           "value": 4
         }
       ]
@@ -113,13 +113,104 @@
       "description": "All models in a unit that contains an Anointed of Asuryan have a 6+ ward save and the Immune to Psychology Special rule.",
       "stats": [
         {
-          "id": "st_wd",
+          "id": "stat_wd",
           "value": 6
         }
       ],
       "attachedSpecialRules": [
         {
           "id": "sr_immuneToPsychology"
+        }
+      ]
+    },
+    {
+      "id": "he_sr_attunedToMagic",
+      "name": "Attuned to Magic",
+      "description": "A model with this special rule has a 5+ ward save and its close combat attacks are magical attacks.\nIn addition, when rolling to determine the strength of the Winds of Magic in the controlling player's Magic phase, compare the highest D6 rollwed with the table below to determine what effects the Phoenix will have (the effect rolled will last until the start of the controlling player's next Magic phase):\n\nD6 - Result\n1 - Magical Dearth: The Phoenix's ward save is reduced to 6+.\n2 - Ebbing Zephyr: The Phoenix has -1 Strength.\n3 - Magical Draught: The Phoenix has + 1 Initiative.\n4 - Energising Breeze: The Phoenix has +1 Attack.\n5 - Invigorating Winds: The Phoenix has +1 Strength.\n6 - Howling Gale: The Phoenix's ward save is increase to 4+.",
+      "stats": [
+        {
+          "id": "stat_wd",
+          "value": 5
+        }
+      ],
+      "attachedSpecialRules": [
+        {
+          "id": "sr_magicalAttacks"
+        }
+      ]
+    },
+    {
+      "id": "he_sr_wakeOfFire",
+      "name": "Wake of Fire",
+      "description": "If a Flamespyre Phoenix moves over one or more unengaged enemy units in the Remaining Moves sub-phase, choose one of those units - that unit suffers D6 Strength 4 hits, plus an additional D3 hits per rank after the first. These hits have the Flaming Attacks special rule.",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_flamingAttacks",
+          "displayAsConditional": true,
+          "conditionalDescription": "* Only for Wake of Fire attacks."
+        }
+      ]
+    },
+    {
+      "id": "he_sr_phoenixReborn",
+      "name": "Phoenix Reborn",
+      "description": "As soon as a Flamespyre Phoenix loses its last Wound (including unsaved Wounds that killed the monster as a result of the Heroic Killing Blow or Multiple Wounds special rules), remove the model and place a Phoenix Reborn counter (a small coint will do) to mark the center of the death spot. If your army contains several Flamespyre Phoenixes, you will need to place a Phoenix Reborn counter for each one that is slain (and a way of telling the counters apart).\nAt the end of the turn roll a D6 for each Phoenix Reborn counter and consult the table below:\n\nD6 - Result\n1-2 - Dead Embers: The Flamespyre Phoenix is dead, never to return - remove the Phoenix Reborn counter from play.\n3-5 - Flame Kindled: Centre the large round template over the centre of the Phoenix Reborn counter. All models (friend or foe) hit by the template suffer a Strength 4 hit with the Flaming Attacks special rule. The Phoenix Reborn counter remains in play - roll again at the end of the next turn (yours or your opponent's).\n6+ - Rise from the Ashes: Place the Flamespyre Phoenix anywhere that is within 6\" of the centre of the Phoenix Reborn counter and at least 1\" away from any unit, and then remove the marker from play. If it is not possible to place the Phoenix due to the aforementioned restrictions, treat this result as a Flame Kindled result instead. Reborn Flamespyre Phoenixes return with D3+2 Wounds. The reborn model suffers no bonuses or penalties incurred from its former existence - i.e. if the model was fleeing or affected by an augment or hex spell at the time of its death, the reborn model will not be.\n\nIf a Flamespyre Phoenix has a ride when it loses its last Wound, both monster and rider are removed and replaced with a Phoenix Reborn counter as described above. However, add +1 when rolling on the Phoenix Reborn table for a Flamespyre Phoenix that had a rider when it was removed. If the result is Dead Embers, both monster and rider are slain, never to return. However, if the result is Rise From the Ashes, the character returns to life iwth its starting number of WOunds, riding atop the reborn Flamespyre Phoenix. Note that is the rider was slain before the Flamespyre Phoenix, a Rise From the Ashes result will not resurrect the character.\nAt the end of the game, remove all Phoenix Reborn counters from the board - these Flamespyre Phoenixes and any riders they had count as casualties."
+    },
+    {
+      "id": "he_sr_blizzardAura",
+      "name": "Blizzard Aura",
+      "description": "Any enemy unit in base contact with a Frostheart Phoenix has the Always Strikes Last special rule and suffers -1 to its Strength (to a minimum of 1)."
+    },
+    {
+      "id": "he_sr_naturalArmour",
+      "name": "Natural Armour",
+      "description": "A Frostheart Phoenix is protected by a thick coating of ice, granting it an armour save of 5+.",
+      "stats": [
+        {
+          "id": "stat_as",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "he_sr_theDefenderOfUlthuan",
+      "name": "The Defender of Ulthuan",
+      "description": "If Tyrion is your army's General, his Inspiring Presence has a range of 18\"."
+    },
+    {
+      "id": "he_sr_bloodOath",
+      "name": "Blood Oath",
+      "description": "In close combat against Grom the Paunch of Misty Mountain, Eltharion gains +1 To Hit."
+    },
+    {
+      "id": "he_sr_markOfAsuryan",
+      "name": "Mark of Asuryan",
+      "description": "If Caradryan is slain in close combat, the unit that killed him immediately suffers D3 Wounds with no armour saves allowed. These Wounds are distributed as for shooting attacks. Any Wounds inflicted count towards combat results. If Caradryan is killed in a challenge, then only his opponent takes these Wounds - any excess Wounds cased by the Mark of Asuryan count towards overkill."
+    },
+    {
+      "id": "he_sr_boonOfIsha",
+      "name": "Boon of Isha",
+      "description": "All attacks made by models in the Everqueen's unit are magical attacks. In addition, all models in her unit are immune to Fear and Terror.",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_magicalAttacks"
+        }
+      ]
+    },
+    {
+      "id": "he_sr_chaosBane",
+      "name": "Chaos Bane",
+      "description": "At the start of each of Alarielle's Magic phases, before rolling for the Winds of Magic, every unit with the Daemonic special rule within 12\" of ALarielle the Radiant suffers D6 Strength 4 hits, distributed as for shooting attacks. However, Alarielle suffers a -D3 penalty to her casting attempts if there is one or more models with the Daemonic special rule within 12\"."
+    },
+    {
+      "id": "he_sr_touchOfTheEverqueen",
+      "name": "Touch of the Everqueen",
+      "description": "Alarielle's close combat attacks have the Heroic Killing Blow special rule if directed against models from the Forces of Destruction.",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_heroicKillingBlow",
+          "displayAsConditional": true,
+          "conditionalDescription": "* Only against Forces of Destruction."
         }
       ]
     }
@@ -789,39 +880,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 7
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 7
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 3
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 8
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 4
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 10
         }
       ],
@@ -844,39 +935,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 6
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 6
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 2
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 7
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 3
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -899,39 +990,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 3
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -957,39 +1048,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 2
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1015,39 +1106,39 @@
       "unitCategoryId": "uc_mo",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 6
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 0
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 5
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 5
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 5
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 4
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 4
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 7
         }
       ],
@@ -1074,39 +1165,39 @@
       "unitCategoryId": "uc_mo",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 6
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 6
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 0
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 6
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 6
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 6
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 3
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 5
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1133,39 +1224,39 @@
       "unitCategoryId": "uc_mo",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 6
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 7
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 0
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 7
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 7
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 7
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 2
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 6
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -1192,39 +1283,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1247,39 +1338,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1302,39 +1393,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1357,39 +1448,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 5
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1412,39 +1503,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 6
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1470,39 +1561,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 6
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 3
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1528,40 +1619,44 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 6
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 3
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 7
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 3
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
+        },
+        {
+          "id": "stat_wz",
+          "value": 2
         }
       ],
       "keywords": ["kw_character", "kw_wizard"],
@@ -1586,39 +1681,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1641,39 +1736,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1696,11 +1791,11 @@
       "unitCategoryId": "us_wm",
       "stats": [
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 7
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 2
         }
       ],
@@ -1713,39 +1808,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 6
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 6
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 2
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 7
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -1775,19 +1870,19 @@
       "unitCategoryId": "uc_ch",
       "stats": [
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 4
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 4
         },
         {
-          "id": "st_as",
+          "id": "stat_as",
           "value": 4
         }
       ],
@@ -1800,27 +1895,27 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1843,23 +1938,23 @@
       "unitCategoryId": "uc_mn",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 2
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 4
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         }
       ],
@@ -1872,39 +1967,39 @@
       "unitCategoryId": "uc_cv",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1927,39 +2022,39 @@
       "unitCategoryId": "uc_cv",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -1982,39 +2077,39 @@
       "unitCategoryId": "uc_mn",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 9
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 3
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 0
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 4
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 5
         }
       ],
@@ -2027,39 +2122,39 @@
       "unitCategoryId": "uc_cv",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -2085,39 +2180,39 @@
       "unitCategoryId": "uc_cv",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 5
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -2143,19 +2238,19 @@
       "unitCategoryId": "uc_ch",
       "stats": [
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 5
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 4
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 4
         },
         {
-          "id": "st_as",
+          "id": "stat_as",
           "value": 5
         }
       ],
@@ -2172,27 +2267,27 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -2212,19 +2307,19 @@
       "unitCategoryId": "uc_ch",
       "stats": [
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 5
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 4
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 4
         },
         {
-          "id": "st_as",
+          "id": "stat_as",
           "value": 5
         }
       ],
@@ -2244,27 +2339,27 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -2290,23 +2385,23 @@
       "unitCategoryId": "uc_mn",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 8
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 5
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 4
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         }
       ],
@@ -2326,39 +2421,39 @@
       "unitCategoryId": "uc_cv",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 6
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -2381,39 +2476,39 @@
       "unitCategoryId": "uc_cv",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 6
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 3
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -2436,39 +2531,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 4
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 2
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 6
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -2497,39 +2592,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 5
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -2562,39 +2657,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 5
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -2627,39 +2722,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 5
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -2682,39 +2777,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 6
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -2737,39 +2832,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 7
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 2
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 7
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -2795,39 +2890,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 6
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 1
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -2856,39 +2951,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 4
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 3
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 1
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 6
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -2917,39 +3012,39 @@
       "unitCategoryId": "uc_in",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 5
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 7
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 6
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 3
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 3
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 8
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 3
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -2985,39 +3080,39 @@
       "unitCategoryId": "uc_mo",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 6
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 0
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 5
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 5
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 4
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 5
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 4
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 7
         }
       ],
@@ -3040,39 +3135,39 @@
       "unitCategoryId": "uc_mb",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 2
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 0
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 4
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 4
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 3
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 4
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 2
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -3089,39 +3184,39 @@
       "unitCategoryId": "uc_mo",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 2
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 5
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 0
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 5
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 5
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 5
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 4
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 3
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
           "value": 8
         }
       ],
@@ -3159,39 +3254,647 @@
       "unitCategoryId": "uc_mo",
       "stats": [
         {
-          "id": "st_mv",
+          "id": "stat_mv",
           "value": 2
         },
         {
-          "id": "st_ws",
+          "id": "stat_ws",
           "value": 6
         },
         {
-          "id": "st_bs",
+          "id": "stat_bs",
           "value": 0
         },
         {
-          "id": "st_st",
+          "id": "stat_st",
           "value": 6
         },
         {
-          "id": "st_to",
+          "id": "stat_to",
           "value": 6
         },
         {
-          "id": "st_wo",
+          "id": "stat_wo",
           "value": 5
         },
         {
-          "id": "st_in",
+          "id": "stat_in",
           "value": 3
         },
         {
-          "id": "st_at",
+          "id": "stat_at",
           "value": 4
         },
         {
-          "id": "st_ld",
+          "id": "stat_ld",
+          "value": 9
+        }
+      ],
+      "keywords": [],
+      "specialRules": [
+        {
+          "id": "sr_fly"
+        },
+        {
+          "id": "sr_largeTarget"
+        },
+        {
+          "id": "sr_terror"
+        },
+        {
+          "id": "he_sr_blizzardAura"
+        },
+        {
+          "id": "he_sr_naturalArmour"
+        },
+        {
+          "id": "he_sr_attunedToMagic"
+        }
+      ]
+    },
+    {
+      "id": "he_up_tyrion",
+      "name": "Tyrion",
+      "unitCategoryId": "uc_cv",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 5
+        },
+        {
+          "id": "stat_ws",
+          "value": 9
+        },
+        {
+          "id": "stat_bs",
+          "value": 7
+        },
+        {
+          "id": "stat_st",
+          "value": 4
+        },
+        {
+          "id": "stat_to",
+          "value": 3
+        },
+        {
+          "id": "stat_wo",
+          "value": 4
+        },
+        {
+          "id": "stat_in",
+          "value": 10
+        },
+        {
+          "id": "stat_at",
+          "value": 4
+        },
+        {
+          "id": "stat_ld",
+          "value": 10
+        }
+      ],
+      "keywords": ["kw_specialCharacter"],
+      "specialRules": [
+        {
+          "id": "sr_alwaysStrikesFirst"
+        },
+        {
+          "id": "he_sr_martialProwess"
+        },
+        {
+          "id": "he_sr_valourOfAges"
+        },
+        {
+          "id": "he_sr_theDefenderOfUlthuan"
+        }
+      ]
+    },
+    {
+      "id": "he_up_malhandhir",
+      "name": "Malhandhir (Elven Steed)",
+      "unitCategoryId": "uc_mn",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 10
+        },
+        {
+          "id": "stat_ws",
+          "value": 4
+        },
+        {
+          "id": "stat_bs",
+          "value": 0
+        },
+        {
+          "id": "stat_st",
+          "value": 4
+        },
+        {
+          "id": "stat_to",
+          "value": 3
+        },
+        {
+          "id": "stat_wo",
+          "value": 1
+        },
+        {
+          "id": "stat_in",
+          "value": 5
+        },
+        {
+          "id": "stat_at",
+          "value": 2
+        },
+        {
+          "id": "stat_ld",
+          "value": 7
+        }
+      ],
+      "keywords": [],
+      "specialRules": []
+    },
+    {
+      "id": "he_up_teclis",
+      "name": "Teclis",
+      "unitCategoryId": "uc_in",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 5
+        },
+        {
+          "id": "stat_ws",
+          "value": 3
+        },
+        {
+          "id": "stat_bs",
+          "value": 3
+        },
+        {
+          "id": "stat_st",
+          "value": 2
+        },
+        {
+          "id": "stat_to",
+          "value": 2
+        },
+        {
+          "id": "stat_wo",
+          "value": 3
+        },
+        {
+          "id": "stat_in",
+          "value": 5
+        },
+        {
+          "id": "stat_at",
+          "value": 1
+        },
+        {
+          "id": "stat_ld",
+          "value": 10
+        },
+        {
+          "id": "stat_wz",
+          "value": 4
+        }
+      ],
+      "keywords": ["kw_specialCharacter"],
+      "specialRules": [
+        {
+          "id": "sr_alwaysStrikesFirst"
+        },
+        {
+          "id": "he_sr_martialProwess"
+        },
+        {
+          "id": "he_sr_valourOfAges"
+        },
+        {
+          "id": "he_sr_lileathsBlessing"
+        }
+      ]
+    },
+    {
+      "id": "he_up_eltharion",
+      "name": "Eltharion",
+      "unitCategoryId": "uc_in",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 5
+        },
+        {
+          "id": "stat_ws",
+          "value": 8
+        },
+        {
+          "id": "stat_bs",
+          "value": 7
+        },
+        {
+          "id": "stat_st",
+          "value": 4
+        },
+        {
+          "id": "stat_to",
+          "value": 3
+        },
+        {
+          "id": "stat_wo",
+          "value": 3
+        },
+        {
+          "id": "stat_in",
+          "value": 8
+        },
+        {
+          "id": "stat_at",
+          "value": 4
+        },
+        {
+          "id": "stat_ld",
+          "value": 10
+        }
+      ],
+      "keywords": ["kw_specialCharacter"],
+      "specialRules": [
+        {
+          "id": "sr_alwaysStrikesFirst"
+        },
+        {
+          "id": "he_sr_martialProwess"
+        },
+        {
+          "id": "he_sr_valourOfAges"
+        },
+        {
+          "id": "sr_hatred",
+          "textInputToAdd": "Orcs & Goblins"
+        },
+        {
+          "id": "he_sr_bloodOath"
+        }
+      ]
+    },
+    {
+      "id": "he_up_stormwing",
+      "name": "Stormwing (Griffon)",
+      "unitCategoryId": "uc_mo",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 6
+        },
+        {
+          "id": "stat_ws",
+          "value": 6
+        },
+        {
+          "id": "stat_bs",
+          "value": 0
+        },
+        {
+          "id": "stat_st",
+          "value": 5
+        },
+        {
+          "id": "stat_to",
+          "value": 5
+        },
+        {
+          "id": "stat_wo",
+          "value": 5
+        },
+        {
+          "id": "stat_in",
+          "value": 7
+        },
+        {
+          "id": "stat_at",
+          "value": 4
+        },
+        {
+          "id": "stat_ld",
+          "value": 8
+        }
+      ],
+      "keywords": [],
+      "specialRules": [
+        {
+          "id": "sr_alwaysStrikesFirst"
+        },
+        {
+          "id": "sr_fly"
+        },
+        {
+          "id": "sr_largeTarget"
+        },
+        {
+          "id": "sr_terror"
+        }
+      ]
+    },
+    {
+      "id": "he_up_alithAnar",
+      "name": "Alith Anar",
+      "unitCategoryId": "uc_in",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 5
+        },
+        {
+          "id": "stat_ws",
+          "value": 7
+        },
+        {
+          "id": "stat_bs",
+          "value": 7
+        },
+        {
+          "id": "stat_st",
+          "value": 4
+        },
+        {
+          "id": "stat_to",
+          "value": 3
+        },
+        {
+          "id": "stat_wo",
+          "value": 3
+        },
+        {
+          "id": "stat_in",
+          "value": 9
+        },
+        {
+          "id": "stat_at",
+          "value": 4
+        },
+        {
+          "id": "stat_ld",
+          "value": 10
+        }
+      ],
+      "keywords": ["kw_specialCharacter"],
+      "specialRules": [
+        {
+          "id": "sr_alwaysStrikesFirst"
+        },
+        {
+          "id": "he_sr_martialProwess"
+        },
+        {
+          "id": "he_sr_valourOfAges"
+        },
+        {
+          "id": "sr_hatred",
+          "textInputToAdd": "Dark Elves"
+        },
+        {
+          "id": "sr_scout"
+        }
+      ]
+    },
+    {
+      "id": "he_up_alarielle",
+      "name": "Alarielle the Radiant",
+      "unitCategoryId": "uc_in",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 5
+        },
+        {
+          "id": "stat_ws",
+          "value": 6
+        },
+        {
+          "id": "stat_bs",
+          "value": 5
+        },
+        {
+          "id": "stat_st",
+          "value": 3
+        },
+        {
+          "id": "stat_to",
+          "value": 3
+        },
+        {
+          "id": "stat_wo",
+          "value": 3
+        },
+        {
+          "id": "stat_in",
+          "value": 6
+        },
+        {
+          "id": "stat_at",
+          "value": 1
+        },
+        {
+          "id": "stat_ld",
+          "value": 10
+        }
+      ],
+      "keywords": ["kw_specialCharacter"],
+      "specialRules": [
+        {
+          "id": "sr_alwaysStrikesFirst"
+        },
+        {
+          "id": "he_sr_martialProwess"
+        },
+        {
+          "id": "he_sr_valourOfAges"
+        },
+        {
+          "id": "he_sr_lileathsBlessing"
+        },
+        {
+          "id": "he_sr_boonOfIsha"
+        },
+        {
+          "id": "he_sr_chaosBane"
+        },
+        {
+          "id": "he_sr_touchOfTheEverqueen"
+        }
+      ]
+    },
+    {
+      "id": "he_up_korhil",
+      "name": "Korhil",
+      "unitCategoryId": "uc_in",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 5
+        },
+        {
+          "id": "stat_ws",
+          "value": 6
+        },
+        {
+          "id": "stat_bs",
+          "value": 6
+        },
+        {
+          "id": "stat_st",
+          "value": 4
+        },
+        {
+          "id": "stat_to",
+          "value": 3
+        },
+        {
+          "id": "stat_wo",
+          "value": 2
+        },
+        {
+          "id": "stat_in",
+          "value": 7
+        },
+        {
+          "id": "stat_at",
+          "value": 3
+        },
+        {
+          "id": "stat_ld",
+          "value": 9
+        }
+      ],
+      "keywords": ["kw_specialCharacter"],
+      "specialRules": [
+        {
+          "id": "sr_alwaysStrikesFirst"
+        },
+        {
+          "id": "he_sr_martialProwess"
+        },
+        {
+          "id": "he_sr_valourOfAges"
+        },
+        {
+          "id": "sr_strider",
+          "textInputToAdd": "Forest"
+        },
+        {
+          "id": "sr_stubborn"
+        }
+      ]
+    },
+    {
+      "id": "he_up_caradryan",
+      "name": "Caradryan",
+      "unitCategoryId": "uc_in",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 5
+        },
+        {
+          "id": "stat_ws",
+          "value": 6
+        },
+        {
+          "id": "stat_bs",
+          "value": 6
+        },
+        {
+          "id": "stat_st",
+          "value": 4
+        },
+        {
+          "id": "stat_to",
+          "value": 3
+        },
+        {
+          "id": "stat_wo",
+          "value": 2
+        },
+        {
+          "id": "stat_in",
+          "value": 7
+        },
+        {
+          "id": "stat_at",
+          "value": 3
+        },
+        {
+          "id": "stat_ld",
+          "value": 9
+        }
+      ],
+      "keywords": ["kw_specialCharacter"],
+      "specialRules": [
+        {
+          "id": "sr_alwaysStrikesFirst"
+        },
+        {
+          "id": "he_sr_martialProwess"
+        },
+        {
+          "id": "he_sr_valourOfAges"
+        },
+        {
+          "id": "sr_magicResistance",
+          "value": 1
+        },
+        {
+          "id": "he_sr_witnessToDestiny"
+        },
+        {
+          "id": "sr_fear"
+        },
+        {
+          "id": "he_sr_markOfAsuryan"
+        }
+      ]
+    },
+    {
+      "id": "he_up_ashtari",
+      "name": "Ashtari",
+      "unitCategoryId": "uc_mo",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 2
+        },
+        {
+          "id": "stat_ws",
+          "value": 6
+        },
+        {
+          "id": "stat_bs",
+          "value": 0
+        },
+        {
+          "id": "stat_st",
+          "value": 6
+        },
+        {
+          "id": "stat_to",
+          "value": 6
+        },
+        {
+          "id": "stat_wo",
+          "value": 5
+        },
+        {
+          "id": "stat_in",
+          "value": 3
+        },
+        {
+          "id": "stat_at",
+          "value": 5
+        },
+        {
+          "id": "stat_ld",
           "value": 9
         }
       ],
@@ -3218,5 +3921,213 @@
       ]
     }
   ],
-  "units": []
+  "units": [
+    {
+      "id": "he_unit_spearmen",
+      "name": "Spearmen",
+      "unitCategoryId": "uc_in",
+      "compositionCategoryId": "cc_core",
+      "profiles": [
+        {
+          "id": "he_up_spearman",
+          "minCount": 10,
+          "costPerCount": 9,
+          "canChangeCount": true,
+          "incrementCountValue": 1
+        }
+      ],
+      "unitOptions": [
+        {
+          "type": "option",
+          "optionType": "wp_sp",
+          "selectionType": "none",
+          "cost": 0,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_equipment"
+        },
+        {
+          "type": "option",
+          "optionType": "ar_sh",
+          "selectionType": "none",
+          "cost": 0,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_equipment"
+        },
+        {
+          "type": "option",
+          "optionType": "ar_la",
+          "selectionType": "none",
+          "cost": 0,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_equipment"
+        },
+        {
+          "type": "unitProfile",
+          "unitProfileId": "he_up_sentinel",
+          "selectionType": "toggle",
+          "cost": 10,
+          "replaceExistingUnitProfile": true,
+          "unitProfileToReplace": "he_up_spearman",
+          "titleId": "title_options"
+        },
+        {
+          "type": "keyword",
+          "keywordId": "kw_musician",
+          "selectionType": "toggle",
+          "cost": 10,
+          "titleId": "title_options"
+        },
+        {
+          "type": "keyword",
+          "keywordId": "kw_standardBearer",
+          "selectionType": "toggle",
+          "cost": 10,
+          "optionGroupsAllowedToSelectFrom": [
+            {
+              "id": "options_st",
+              "totalCost": 25,
+              "titleId": "title_magicItems"
+            }
+          ],
+          "titleId": "title_options"
+        }
+      ]
+    },
+    {
+      "id": "he_unit_archers",
+      "name": "Archers",
+      "unitCategoryId": "uc_in",
+      "compositionCategoryId": "cc_core",
+      "profiles": [
+        {
+          "id": "he_up_archer",
+          "minCount": 10,
+          "costPerCount": 10,
+          "canChangeCount": true,
+          "incrementCountValue": 1
+        }
+      ],
+      "unitOptions": [
+        {
+          "type": "option",
+          "optionType": "wp_hw",
+          "selectionType": "none",
+          "cost": 0,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_equipment"
+        },
+        {
+          "type": "option",
+          "optionType": "wp_lb",
+          "selectionType": "none",
+          "cost": 0,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_equipment"
+        },
+        {
+          "type": "option",
+          "optionType": "ar_la",
+          "selectionType": "toggle",
+          "costPerProfile": 1,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_options"
+        },
+        {
+          "type": "unitProfile",
+          "unitProfileId": "he_up_hawkeye",
+          "selectionType": "toggle",
+          "cost": 10,
+          "replaceExistingUnitProfile": true,
+          "unitProfileToReplace": "he_up_archer",
+          "titleId": "title_options"
+        },
+        {
+          "type": "keyword",
+          "keywordId": "kw_musician",
+          "selectionType": "toggle",
+          "cost": 10,
+          "titleId": "title_options"
+        },
+        {
+          "type": "keyword",
+          "keywordId": "kw_standardBearer",
+          "selectionType": "toggle",
+          "cost": 10,
+          "titleId": "title_options"
+        }
+      ]
+    },
+    {
+      "id": "he_unit_lothernSeaGuard",
+      "name": "Lothern Sea Guard",
+      "unitCategoryId": "uc_in",
+      "compositionCategoryId": "cc_core",
+      "profiles": [
+        {
+          "id": "he_up_seaGuard",
+          "minCount": 10,
+          "costPerCount": 11,
+          "canChangeCount": true,
+          "incrementCountValue": 1
+        }
+      ],
+      "unitOptions": [
+        {
+          "type": "option",
+          "optionType": "wp_sp",
+          "selectionType": "none",
+          "cost": 0,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_equipment"
+        },
+        {
+          "type": "option",
+          "optionType": "wp_bw",
+          "selectionType": "none",
+          "cost": 0,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_equipment"
+        },
+        {
+          "type": "option",
+          "optionType": "ar_la",
+          "selectionType": "none",
+          "costPerProfile": 0,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_equipment"
+        },
+        {
+          "type": "option",
+          "optionType": "ar_sh",
+          "selectionType": "toggle",
+          "costPerProfile": 1,
+          "applyToAllUnitProfiles": true,
+          "titleId": "title_options"
+        },
+        {
+          "type": "unitProfile",
+          "unitProfileId": "he_up_seaMaster",
+          "selectionType": "toggle",
+          "cost": 10,
+          "replaceExistingUnitProfile": true,
+          "unitProfileToReplace": "he_up_seaGuard",
+          "titleId": "title_options"
+        },
+        {
+          "type": "keyword",
+          "keywordId": "kw_musician",
+          "selectionType": "toggle",
+          "cost": 10,
+          "titleId": "title_options"
+        },
+        {
+          "type": "keyword",
+          "keywordId": "kw_standardBearer",
+          "selectionType": "toggle",
+          "cost": 10,
+          "titleId": "title_options"
+        }
+      ]
+    }
+  ]
 }
