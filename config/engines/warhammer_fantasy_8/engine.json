@@ -1,0 +1,4537 @@
+{
+  "id": "engine_whfb8",
+  "type": "engine",
+  "name": "Warhammer Fantasy Battles 8th Edition",
+  "defaultNoValueDisplayForStatistics": "-",
+  "defaultConditionalIndicator": "*",
+  "defaultCompositionCalculation": "percent",
+  "defaultCompositionStatCounters": ["stat_pt"],
+  "statistics": [
+    {
+      "id": "stat_pt",
+      "name": "Points",
+      "abbreviation": "Pts",
+      "minValue": 1
+    },
+    {
+      "id": "stat_mv",
+      "name": "Movement",
+      "abbreviation": "M",
+      "minValue": 1
+    },
+    {
+      "id": "stat_ws",
+      "name": "Weapon Skill",
+      "abbreviation": "WS",
+      "minValue": 1,
+      "maxValue": 10
+    },
+    {
+      "id": "stat_bs",
+      "name": "Ballistic Skill",
+      "abbreviation": "BS",
+      "minValue": 1,
+      "maxValue": 10
+    },
+    {
+      "id": "stat_st",
+      "name": "Strength",
+      "abbreviation": "S",
+      "minValue": 1,
+      "maxValue": 10
+    },
+    {
+      "id": "stat_to",
+      "name": "Toughness",
+      "abbreviation": "T",
+      "minValue": 1,
+      "maxValue": 10
+    },
+    {
+      "id": "stat_wo",
+      "name": "Wounds",
+      "abbreviation": "W",
+      "minValue": 1
+    },
+    {
+      "id": "stat_in",
+      "name": "Initiative",
+      "abbreviation": "I",
+      "minValue": 1,
+      "maxValue": 10
+    },
+    {
+      "id": "stat_at",
+      "name": "Attacks",
+      "abbreviation": "A",
+      "minValue": 1
+    },
+    {
+      "id": "stat_ld",
+      "name": "Leadership",
+      "abbreviation": "Ld",
+      "minValue": 2,
+      "maxValue": 10
+    },
+    {
+      "id": "stat_as",
+      "name": "Armour Save",
+      "abbreviation": "AS",
+      "minValue": 1,
+      "maxValue": 6,
+      "inversed": true,
+      "noValueAllowed": "true",
+      "valueSuffixDisplay": "+"
+    },
+    {
+      "id": "stat_wa",
+      "name": "Ward Save",
+      "abbreviation": "WD",
+      "minValue": 2,
+      "maxValue": 6,
+      "inversed": true,
+      "noValueAllowed": "true",
+      "valueSuffixDisplay": "+"
+    },
+    {
+      "id": "stat_rs",
+      "name": "Regeneration Save",
+      "abbreviation": "RS",
+      "minValue": 2,
+      "maxValue": 6,
+      "inversed": true,
+      "noValueAllowed": "true",
+      "valueSuffixDisplay": "+"
+    },
+    {
+      "id": "stat_us",
+      "name": "Unit Strength",
+      "abbreviation": "US",
+      "minValue": 1
+    },
+    {
+      "id": "stat_rn",
+      "name": "Range",
+      "abbreviation": "Rng",
+      "valueSuffixDisplay": "\"",
+      "minValue": 0,
+      "invalidWithUnitDisplay": true
+    },
+    {
+      "id": "stat_pd",
+      "name": "Power Dice",
+      "abbreviation": "PD",
+      "minValue": 0,
+      "displayOptional": true
+    },
+    {
+      "id": "stat_dd",
+      "name": "Dispel Dice",
+      "abbreviation": "DD",
+      "minValue": 0,
+      "displayOptional": true
+    },
+    {
+      "id": "stat_sc",
+      "name": "Spell Count",
+      "abbreviation": "SC",
+      "minValue": 0,
+      "displayOptional": true
+    },
+    {
+      "id": "stat_mr",
+      "name": "Magic Resistance",
+      "abbreviation": "MR",
+      "minValue": 0,
+      "displayOptional": true
+    },
+    {
+      "id": "stat_cv",
+      "name": "Casting Value",
+      "abbreviation": "CV",
+      "minValue": 3,
+      "invalidWithUnitDisplay": true,
+      "valueSuffixDisplay": "+"
+    },
+    {
+      "id": "stat_ln",
+      "name": "Lore Number",
+      "abbreviation": "LN",
+      "minValue": 0,
+      "invalidWithUnitDisplay": true
+    },
+    {
+      "id": "stat_wz",
+      "name": "Wizard Level",
+      "abbreviation": "WZ",
+      "minValue": 0,
+      "displayOptional": true
+    }
+  ],
+  "factions": [
+    {
+      "id": "army_bc",
+      "name": "Beasts of Chaos"
+    },
+    {
+      "id": "army_br",
+      "name": "Bretonnia"
+    },
+    {
+      "id": "army_cd",
+      "name": "Chaos Dwarves"
+    },
+    {
+      "id": "army_dc",
+      "name": "Daemons of Chaos"
+    },
+    {
+      "id": "army_de",
+      "name": "Dark Elves"
+    },
+    {
+      "id": "army_dw",
+      "name": "Dwarves"
+    },
+    {
+      "id": "army_he",
+      "name": "High Elves"
+    },
+    {
+      "id": "army_ok",
+      "name": "Ogre Kingdoms"
+    },
+    {
+      "id": "army_og",
+      "name": "Orcs and Goblins"
+    },
+    {
+      "id": "army_lz",
+      "name": "Lizardmen"
+    },
+    {
+      "id": "army_sk",
+      "name": "Skaven"
+    },
+    {
+      "id": "army_em",
+      "name": "The Empire"
+    },
+    {
+      "id": "army_tk",
+      "name": "Tomb Kings"
+    },
+    {
+      "id": "army_vc",
+      "name": "Vampire Counts"
+    },
+    {
+      "id": "army_wc",
+      "name": "Warriors of Chaos"
+    },
+    {
+      "id": "army_we",
+      "name": "Wood Elves"
+    }
+  ],
+  "keywords": [
+    {
+      "id": "kw_general",
+      "keyword": "General"
+    },
+    {
+      "id": "kw_mounted",
+      "keyword": "Mounted"
+    },
+    {
+      "id": "kw_standardBearer",
+      "keyword": "Standard Bearer"
+    },
+    {
+      "id": "kw_musician",
+      "keyword": "Musician"
+    },
+    {
+      "id": "kw_wizard",
+      "keyword": "Wizard"
+    },
+    {
+      "id": "kw_character",
+      "keyword": "Character"
+    }
+  ],
+  "specialRules": [
+    {
+      "id": "sr_kindleflame",
+      "name": "Kindleflame",
+      "description": "All of the spells in the Lore of Fire are Flaming Attacks. In addition if a direct damage or magic missile spell from the Lore of Fire is cast at a unit that has already been hit by a direct damage or magic missile spell from the Lore of Fire in the same Magic phase (even if the spell was cast by a different Wizard) the casting Wizard adds +D3 to his casting total.",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_flamingAttacks"
+        }
+      ]
+    },
+    {
+      "id": "sr_wildheart",
+      "name": "Wildheart",
+      "description": "If a spell from the Lore of Beasts is targeted on one or more units of war beasts, cavalry, monstrous beasts, monstrous cavalry, chariots, monsters, swarms or any unit from Warhammer Armies: Beastmen, then the casting difficulty of the spell is reduced by 1."
+    },
+    {
+      "id": "sr_metalshifting",
+      "name": "Metalshifting",
+      "description": "Magic missiles and direct damage spells from this Lore do not have a Strength - their To Wound score is always equal to the unmodified armour save of the target. For example, a model with light armour and shield (for a 5 + save) is wounded on a 5+, whilst a heavily armoured knight, who carries a shield and rides on a barbed steed, is wounded on a 2+. Remember that a 1 always fails, so even a model with a 1+ armour save is only wounded on a 2+. Models without an armour save cannot be wounded. No armour saves are permitted against wounds caused by spells from the Lore of Metal, which also always count as Flaming Attacks.",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_flamingAttacks"
+        },
+        {
+          "id": "sr_ignoresArmourSaves"
+        }
+      ]
+    },
+    {
+      "id": "sr_exorcism",
+      "name": "Exorcism",
+      "description": "If a spell from the Lore of Light inflicts a number of hits on an enemy unit, it will cause an extra D6 hits (e.g. 2D6 hits would become 3D6 hits) if the target is Undead or a Daemon."
+    },
+    {
+      "id": "sr_lifebloom",
+      "name": "Lifebloom",
+      "description": "When a spell from the Lore of Life is successfully cast, the Wizard (or another friendly model within 12\") instantly recovers a single Wound lost earlier in the battle."
+    },
+    {
+      "id": "sr_roilingSkies",
+      "name": "Roiling Skies",
+      "description": "When a spell from the Lore of Heavens targets an enemy flying unit or a model with the Fly special rule, the target suffers D6 Strength 4 hits, in addition to any other effects caused by the spell."
+    },
+    {
+      "id": "sr_smokeAndMirrors",
+      "name": "Smoke and Mirrors",
+      "description": "After a spell from the Lore of Shadow is successfully cast and resolved, the casting Wizard can choose to immediately swap places with a friendly character of the same troop type anywhere within 18\"."
+    },
+    {
+      "id": "sr_lifeLeeching",
+      "name": "Life Leeching",
+      "description": "When a Lore of Death spell is resolved, roll a D6 for each unsaved wound caused by the spell (models removed by the Purple Sun of Xereus each add a number of dice equal to their Wounds characteristic). For each 5 or 6 rolled on these additional dice, the Wizard immediately adds a dice to his army's power pool."
+    },
+    {
+      "id": "sr_magicalAttacks",
+      "name": "Magical Attacks",
+      "description": "The item, unit, or ability counts all attacks made with it as magical."
+    },
+    {
+      "id": "sr_alwaysStrikesFirst",
+      "name": "Always Strikes First",
+      "description": "Models with this special rule (or who are attacking with a weapon that grants this special rule) always strike first in close combat regardless of Initiative.\nIn addition, if the model's Initiative is equal to or higher than his enemy's, he can re-roll failed misses when striking in close combat - he moves so fast that he can land his blows with incredible precision. If the model with this rule is fighting an enemy with the same ability, the Attacks are made simultaneously, and neither model benefits from the re-rolls normally granted by this rule."
+    },
+    {
+      "id": "sr_alwaysStrikesLast",
+      "name": "Always Strikes Last",
+      "description": "A model with this special rule (or who is attacking with a weapon that grants this special rule) always strikes last in close combat, regardless of Initiative.\nIf the model with this rule is fighting an enemy with the same ability, the Attacks are made simultaneously. If a model has both this rule and Always Strikes First, the two cancel out and neither applies so use the model's Initiative."
+    },
+    {
+      "id": "sr_armourPiercing",
+      "name": "Armour Piercing",
+      "description": "Wounds caused in close combat by a model with this special rule (or who is attacking with a weapon that has this special rule) inflict a further -1 armour save modifier, in addition to those for Strength.\nIf a model has a weapon with the Armour Piercing rule, only attacks made or shots fired with the weapon are Armour Piercing."
+    },
+    {
+      "id": "sr_breathWeapon",
+      "name": "Breath Weapon",
+      "description": "A model with a Breath Weapon can use it to make a special attack once per game. A model with two or more different Breath Weapons can use each one once. The form that this special attack takes depends on whether or not the creature is in close combat.\nIn the event that a model has more than one Breath Weapon attack, it is permitted to use only one in a single turn.\n\nBREATH WEAPON SHOOTING ATTACK\nProvided the model is not in close combat, it can use its Breath Weapon during its Shooting phase. A Breath Weapon shooting attack can be made even if the model marched or reformed during the same turn.\nTo perform the attack, place the flame template so that it lies entirely within the model's forward arc, with the narrow end touching the creature's mouth, and so that it is not touching any friendly units or enemy units that are in close combat.\nAll models that he even partially under the template are automatically hit, as covered on page 9. The Strength and any special effects of the creature's Breath Weapon will be covered in its rules.\n\nBREATH WEAPON CLOSE COMBAT ATTACK\nIf the model with this special rule is in close combat, it can use the Breath Weapon to make an additional close combat attack at its own Initiative (in either player's turn). A model that makes a breath weapon attack in this way inflicts 2D6 automatic hits on a single enemy unit in base contact - if there is more than one enemy unit in base contact with the model, the controlling player chooses which enemy unit suffers the hits. As with breath weapon attacks made in the Shooting phase, the Strength and any special effects of the creature's Breath Weapon will be covered in its rules. Wounds caused by a Breath Weapon in close combat count towards combat resolution."
+    },
+    {
+      "id": "sr_devastatingCharge",
+      "name": "Devastating Charge",
+      "description": "Models with this special rule have +1 Attack during a turn in which they charge into combat.",
+      "statChange": [
+        {
+          "id": "stat_at",
+          "value": 1,
+          "displayAsConditional": true,
+          "conditionalDescription": "* Extra attack on the charge."
+        }
+      ]
+    },
+    {
+      "id": "sr_ethereal",
+      "name": "Ethereal",
+      "description": "Ethereal creatures treat all terrain as open terrain for the purposes of movement. They may not finish their movement inside impassable terrain - though they can pass through obstructions of this kind, they cannot linger. They are also never slowed by any special rule, spell or item that would otherwise reduce their movement or stop them from moving completely.\nThe close combat attacks of Ethereal creatures are magical. Conversely, Ethereal creatures can only be wounded by spells, magical attacks and magic weapons or effects. This is not to say that Ethereal creatures cannot be beaten in close combat by mundane troops, because combat results are not wholly dependent upon casualties.\nEthereal creatures block line of sight normally and cannot see through anything that would block the line of sight of normal units.\nCharacters that are not themselves Ethereal are not permitted to join units that are (even if they become temporarily Ethereal for some reason).",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_magicalAttacks"
+        }
+      ]
+    },
+    {
+      "id": "sr_fastCalvary",
+      "name": "Fast Calvary",
+      "description": "VANGUARD\nFast Cavalry are inevitably at the forefront of any advance - Fast Cavalry automatically have the Vanguard deployment special rule (see page 79).\n\nFREE REFORM\nUnless it charges, a Fast Cavalry unit is allowed to reform as many times as it wishes during its move, even if it marches, provided that no model ends up moving a number of inches higher than double its Movement value.\n\nCHARACTERS\nIf a Fast Cavalry unit is joined by a character without the Fast Cavalry rule, the unit loses the rule until the character leaves.\n\nFEIGNED FLIGHT\nFast Cavalry are extremely good at escaping from the foe and regrouping. A unit of Fast Cavalry that chooses to flee as a charge reaction and subsequently rallies at the beginning of their next turn may reform as normal, but is then also free to move during the remaining moves part of the Movement phase. The unit is also free to shoot as normal (but always counts as having moved). Note that if the flee move of the Fast Cavalry does not take them beyond the charge reach of their enemies, the unit is caught and destroyed as normal.\n\nFIRE ON THE MARCH\nFast Cavalry armed with missile weapons are expert at shooting from horseback (or wolfback!) and can therefore shoot during a turn in which they marched or reformed (providing their weapon doesn't have the Move or Fire special rule). However, the normal -1 To Hit penalty for moving and shooting still applies.",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_vanguard"
+        }
+      ]
+    },
+    {
+      "id": "sr_extraAttack",
+      "name": "Extra Attack",
+      "description": "A model with this special rule (or who is attacking with a weapon that bestows this special rule) increases his Attacks value by 1.",
+      "statChange": [
+        {
+          "id": "stat_at",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "sr_fear",
+      "name": "Fear",
+      "description": "At the start of each Close Combat round, a unit that is in base contact with one or more enemy models that cause Fear must take a Leadership test, before any blows are struck.\nIf the test is passed, all is well - the unit has mastered its fear, at least for now. If the test is failed, die unit's fear goes uncontrolled and the warriors cower defensively from the horror before them - all models in the unit have their Weapon Skill reduced to 1 for the remainder of that round of close combat.\nModels that cause Fear are themselves immune to Fear, and are not affected by any of this rule's effects (even if their unit fails its test, for example). This includes characters riding Fear-causing mounts, who count as causing Fear themselves (see page 82)."
+    },
+    {
+      "id": "sr_fightInExtraRanks",
+      "name": "Fight In Extra Ranks",
+      "description": "If a unit has this special rule then supporting attacks can be made by an extra rank than normal on a turn in which the unit did not charge. Accordingly, a unit with this special rule can normally make supporting attacks with two ranks. Remember that supporting attacks cannot be made to the side or rear, but only to the front.\nA horde with this rule will make supporting attacks with three ranks!"
+    },
+    {
+      "id": "sr_flamingAttacks",
+      "name": "Flaming Attacks",
+      "description": "Whilst Flaming Attacks do not give bonuses against most troops (we assume the weapon blow to be far deadlier that the flames that wreathe it), they can be Fear-inducing in wild creatures, as well as prove fetal against some of the Warhammer world's more peculiar monsters.\nEnemies with Flaming Attacks cause Fear in war beasts, cavalry and chariots (we talk about troop types starting on page 80). Flaming Attacks also have special properties against creatures that have the Flammable and Regeneration special rules, as explained later on.\nFire can be a valuable weapon for driving out the defenders of a fortification. Every model with Flaming Attacks rerolls failed To Wound rolls when shooting at or assaulting a building, to represent the added peril for the occupants of being inside the burning structure.\nUnless otherwise stated, a model with this special rule has both Flaming shooting and close combat attacks (though any spells cast by the model are unaffected, as are any attacks made with magic weapons they might be wielding)."
+    },
+    {
+      "id": "sr_flammable",
+      "name": "Flammable",
+      "description": "If a model with the Flammable rule suffers one or more unsaved wounds from a Flaming Attack, each unsaved wound is doubled. So, for example, if an attack would normally cause 1 wound, the Flammable creature would take 2 wounds. If the number of wounds are randomly determined by a dice roll, double the result of the dice, rather than rolling two dice and adding the scores together."
+    },
+    {
+      "id": "sr_frenzy",
+      "name": "Frenzy",
+      "description": "To represent their fighting fury and lack of self-preservation instincts, Frenzied troops have the Extra Attack and Immune to Psychology special rules (see opposite and page 69).\n\nBERSERK RAGE\nIf, during the Charge sub-phase, a unit that includes one or more Frenzied models could declare a charge, then it must do so unless a Leadership test is passed. If the Leadership test is foiled, the Frenzied unit must declare a charge against the nearest viable enemy.\nA unit that includes one or more Frenzied models cannot choose to restrain pursuit if it beats a foe in close combat. It will either pursue (if the enemy has fled) or overrun (if the enemy was wiped out in combat).\nNote that if the enemy is wiped out in combat but the Frenzied unit did not charge that turn (or if the combat was the result of a pursuit or overrun charge in the same turn), then the Frenzied unit will reform as normal as it has no other choice of action.\nIn addition, Frenzied models cannot parry (see page 88).\n\nLOSING FRENZY\nUnlike other special rules, Frenzy can be lost as the game goes on. Models retain their Frenzy for the entire game unless beaten in combat, at which point the enemy have succeeded in knocking them into a less fanatical state and the Frenzy (together with all associated rules) is lost."
+    },
+    {
+      "id": "sr_fly",
+      "name": "Fly",
+      "description": "Whether they fly or move on the ground, all flyers have the Swiftstride special rule (see page 76). In addition, because of their loose fighting style, flying units consisting of more than one model have the Skirmishers special rule (see page 77).\n\nMOVING FLYERS\nIn Warhammer, flight is represented by a swoop or glide of up to 10\". The flyer starts off on the ground, takes off, flies to where it wishes to go, and then lands. Flyers, therefore, begin and end their movement on the ground. This is chiefly because it's impractical to suspend models over the battlefield, so we use the 'glide' for the sake of simplicity.\nUnits made up entirely of models that can fly can move or charge normally on the ground, using their Movement value, or instead choose to fly. A unit that flies can move over other units and terrain as it does so, treating the entire move as taking place over open ground. It may not finish the move on top of another unit or in impassable terrain. Depending on the flying model's height and/or position, it will sometimes be able to draw a line of sight over intervening units to a more distant target and make a flying charge over the intervening unit\nA unit that makes a flying charge does so using the glide move of 10\" as its Movement characteristic.\n\nFLYING MARCH\nA unit that is flying can march as normal, doubling its flying move to 20\", representing a particularly long swoop or glide.\n\nFLEE AND PURSUE\nFlyers always move on the ground when attempting to flee or pursue - there simply is no time for them to take off properly. Note that they still benefit from their Swiftstride rule as they flee and pursue.\n\nFLYING CAVALRY\nSome units, such as the noble Bretonnian Pegasus Knights, have the Flying Cavalry special rule - a particularly effective type of flying unit. In rules terms, flying cavalry are treated as Fast Cavalry with the Fly special rule. See page 68 for more details on Fast Cavalry.",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_swiftstride"
+        },
+        {
+          "id": "sr_skirmishers"
+        }
+      ]
+    },
+    {
+      "id": "sr_hatred",
+      "name": "Hatred",
+      "description": "A model striking a hated foe in close combat re-rolls all misses during the first round of combat - this represents the unit venting its pent up hatred upon the foe. After this initial blood-mad hacking, the impetus is considered to be spent - the rest of the combat is fought normally. Sometimes a model will only Hate a specific foe (rather than everyone). Where this is the case, the type of foe will be expressed in the special rule, for example Hatred (Dwarfs).",
+      "requiresAttachedInput": true
+    },
+    {
+      "id": "sr_hover",
+      "name": "Hover",
+      "description": "Models with the Hover special rule follow all the rules for Flyers, but cannot march."
+    },
+    {
+      "id": "sr_immuneToPsychology",
+      "name": "Immune To Psychology",
+      "description": "If the majority of the models in a unit have the Immune to Psychology rule, the unit automatically passes all Panic, Fear and Terror tests it has to take. It should be noted that they have to take Break tests (and other Leadership tests) normally - being stoic does not necessarily make a warrior entirely heedless of mortal danger.\nIf the majority of the models in a unit have the Immune to Psychology rule, the unit cannot choose Flee! as a charge reaction. Pride, or a sluggish acceptance of the situation, prevents them from doing so."
+    },
+    {
+      "id": "sr_ignoresCover",
+      "name": "Ignores Cover",
+      "description": "If a model's shooting attacks have the Ignores Cover special rule, they ignore To Hit penalties imposed by soft cover, hard cover and obstacles (other To Hit penalties apply as normal)."
+    },
+    {
+      "id": "sr_impactHits",
+      "name": "Impact Hits",
+      "description": "Some models, notably chariots, have so much impetus that they cause considerable damage when they crash into the enemy. To represent this, these models cause Impact Hits.\nThe number of Impact Hits caused varies from creature to creature, or troop type to troop type, but is shown in brackets after the special rule. Such as Impact Hits (D6 +1) or Impact Hits (D3).\nIf a creature is granted two sets of Impact Hits, normally because its troop type and special rules both bestow Impact Hits, use the highest set, rather than a total.\n\nRESOLVING IMPACT HITS\nImpact Hits are only made on the turn the model charges into close combat. If the model with Impact Hits is itself charged, or is fighting in a second or subsequent round of combat, then this rule gives no benefit. Note that if the model does not complete the charge for any reason (for example, because it is destroyed) then no Impact Hits will take place.\nImpact Hits are resolved at the very beginning of the close combat, before challenges are issued and attacks of any other kind are made. They hit a unit in base contact (if in base contact with more than one enemy unit, split the hits as evenly as possibly, randomising any 'spare' hits) if the model with Impact Hits is not in base contact with the enemy, this rule has no effect.\nImpact Hits hit automatically, and roll to wound using the Strength of the model making the Impact Hits. The hits are distributed exactly as if they were shooting attacks (see page 42 for more information on shooting attacks, and page 96 for characters and shooting attacks).\nFinally, as Impact Hits are close combat attacks (albeit of an unusual type) any unsaved wounds they inflict count towards combat resolution, just as any more conventional close combat attacks would.",
+      "requiresAttachedInput": true
+    },
+    {
+      "id": "sr_killingBlow",
+      "name": "Killing Blow",
+      "description": "If a model with the Killing Blow special rule rolls a 6 to wound in close combat, he automatically slays his opponent - regardless of the number of wounds on the victim's profile. Armour saves and regeneration saves cannot be taken against a Killing Blow. A ward save can be attempted - if passed, the ward save prevents all damage from the Killing Blow.\nKilling Blow is only effective against infantry, cavalry and war beasts - all other creatures are considered either too large to be felled by a single blow (monsters, monstrous infantry / cavalry / beasts, chariots and so on) or too numerous for a well-placed strike to slay them all (Swarms).\nNote that if a Killing Blow attack wounds automatically, then the Killing Blow special rule does not come into play.\nUnless otherwise specified, Killing Blow applies only to close combat attacks."
+    },
+    {
+      "id": "sr_heroicKillingBlow",
+      "name": "Heroic Killing Blow",
+      "description": "Heroic Killing Blow is a skill possessed by truly mighty warriors. It functions exactly like a normal Killing Blow, except it works on any creature, regardless of size and troop type, except for swarms. A model with Heroic Killing Blow can take the head off a Dragon with a single swing - its scaly hide matters naught!"
+    },
+    {
+      "id": "sr_largeTarget",
+      "name": "Large Target",
+      "description": "Large Targets are models that are especially tall, such as Dragons, Giants and Greater Daemons. Such foes cannot easily take cover behind obstacles that would shelter lesser troops. Large Targets cannot claim cover modifiers for obstacles (see page 122 for more details).\nHowever, if your General or Battle Standard Bearer is a Large Target (or is mounted on one), then the range of their respective Inspiring Presence and Hold Your Ground! abilities is increased from 12\" to 18\" to represent the ease with which your troops can see them. See page 107 for more details on Generals, Battle Standard Bearers and their special abilities."
+    },
+    {
+      "id": "sr_loremaster",
+      "name": "Loremaster",
+      "description": "A Wizard with the Loremaster special rule knows all the spells from his chosen lore - he does not need to roll randomly. The lore in question is normally given in brackets as part of the Loremaster special rule. For example, a model with Loremaster (Fire) would know all the spells from the Lore of Fire."
+    },
+    {
+      "id": "sr_magicResistance",
+      "name": "Magic Resistance",
+      "description": "A model with Magic Resistance has a bonus to its ward saves when saving against damage caused by spells. This bonus is based on the number shown in brackets after the Magic Resistance special rule. Magic Resistance (2) would give a +2 bonus (turning a 54- ward save into a 3 + ward save, for example). Magic resistance can even give a ward save to models that do not have one at all. A model with Magic Resistance (3) and no ward save normally would therefore have a 4+ ward save against damage from spells. If a character with Magic Resistance joins a unit, all models in the unit benefit from the Magic Resistance. If a model has two sets of Magic Resistance, the two do not combine, it uses the highest.",
+      "requiresAttachedInput": true,
+      "statToReplaceWithInput": "st_mr"
+    },
+    {
+      "id": "sr_monsterAndHandlers",
+      "name": "Monsters and Handlers",
+      "description": "The handlers aren't really a combat unit per se, so we ignore them for most gaming purposes, treating the monster itself as the extent of the unit. When the monster suffers an unsaved wound, roll a D6. On a roll of 1-4 the monster suffers the wound as normal, but on a roll of 5-6 a handler model is removed instead. Once all the handlers have been removed, the monster must take a Monster Reaction test just like a ridden monster that loses its rider.\nIn close combat, the handlers can direct their attacks against any enemy in base contact with their monster. The handlers are otherwise assumed to have their hands too full controlling the monster to carry out any actions like shooting, or casting spells, etc. In addition the handlers cannot be charged, attacked or otherwise affected separately from their monster - if they are found to be blocking movement or line of sight, the controlling player simply alters their position, just as you would for any other battlefield marker or counter. If the monster is removed, so are its handlers."
+    },
+    {
+      "id": "sr_moveOrFire",
+      "name": "Move Or Fire",
+      "description": "A weapon with the Move or Fire special rule cannot be fired in the Shooting phase if the model moved earlier in the turn. This even applies if the model in question was forced to move as the result of a spell or other such compulsory action."
+    },
+    {
+      "id": "sr_multipleShots",
+      "name": "Multiple Shots",
+      "description": "A weapon with this special rule enables its wielder to fire several shots at a time, rather than a single shot. The number of shots the weapon can fire will normally be given as part of its description. Such weapons can either fire once without penalty, or as many times as indicated in their rules with a -1 To Hit penalty (this is in addition to any other modifiers for range, cover and so on). All models in the unit must fire either single or Multiple Shots — the player cannot choose to fire single shots with some and Multiple Shots with others.",
+      "requiresAttachedInput": true
+    },
+    {
+      "id": "sr_multipleWounds",
+      "name": "Multiple Wounds",
+      "description": "Each unsaved wound inflicted by an attack with the Multiple Wounds special rule is multiplied into more than one wound. The exact number of wounds caused will vary from model to model and weapon to weapon, but will normally be shown in brackets as part of the special rule. For example, Multiple Wounds (2) would mean that each unsaved wound would multiply to 2 wounds, whilst Multiple Wounds (D6) would mean that each unsaved wound would multiply to D6 wounds.\nWhere the number of Multiple Wounds is generated by a dice roll, roll a dice separately for each unsaved wound and use the total of all the dice rolled for the final number of wounds inflicted.",
+      "requiresAttachedInput": true
+    },
+    {
+      "id": "sr_poisonedAttacks",
+      "name": "Poisoned Attacks",
+      "description": "A model with the Poisoned Attacks special rule wounds his target automatically if his natural dice roll to hit is a 6. Armour saves are modified by the Strength of the attack as normal. Note that if a Poisoned shooting attack needs to roll a 7 or more to hit, or hits automatically, then the Poisoned attacks rule does not come into play.\nUnless otherwise stated, a model with this special rule has both Poisoned shooting and close combat attacks. Any spells cast by the model are unaffected, as are any attacks made with magic weapons they might be wielding, whether they be shooting or close combat attacks."
+    },
+    {
+      "id": "sr_randomAttacks",
+      "name": "Random Attacks",
+      "description": "Models with the Random Attacks special rule do not have a normal number for their Attacks characteristic, but rather a dice roll, such as D3, D6 or D6 +1. Each time a model with this special rule comes to strike blows, roll the indicated dice, adding any modifiers shown, to determine the number of attacks that the model will make, then roll to hit as normal. If a unit contains more than one model with Random Attacks, roll separately for each model, unless specified otherwise.",
+      "requiresAttachedInput": true,
+      "statToReplaceWithInput": "st_at"
+    },
+    {
+      "id": "sr_randomMovement",
+      "name": "Random Movement",
+      "description": "Models with the Random Movement special rule do not have a Movement characteristic, but rather a dice roll, such as D6, 2D6 or 3D6. This is the distance they move, charge, pursue, overrun and flee - they cannot march.\nModels with Random Movement cannot declare charges, and are always moved in the Compulsory Moves sub-phase. When the model moves, first pivot it about its centre to face the direction in which you wish it to travel. Then, roll the dice shown in the model's profile. Finally, move the model directly forwards a number of inches equal to the total rolled by the dice. No other pivots can be made.\nThere's a chance that the model's peculiar movement will cause it to come into contact with an enemy, so measure the distance in a straight line before the model is moved. If the move is found to take the unit into contact with an enemy, then it counts as charging, and this is resolved using the normal rules for charges and using the distance rolled as its charge range. Charge reactions cannot be declared against enemies with the Random Movement special rule - the enemy find it impossible to recognise the danger until it is far too late!\nIf the random move brings the unit to within 1\" of a friendly unit or impassable terrain, it stops immediately and cannot move further during that Movement phase.\nIf two or more models in a unit have the Random Movement special rule, pivot the unit about its centre, then roll the dice only once to determine how for the unit moves. If models in the unit have a different Random Movement value, use the slowest for the entire unit.",
+      "requiresAttachedInput": true,
+      "statToReplaceWithInput": "st_mv"
+    },
+    {
+      "id": "sr_regeneration",
+      "name": "Regeneration",
+      "description": "A model with the Regeneration special rule is permitted a special regenerate saving throw after it has failed any armour save it may have, instead of taking a ward save (if it has one). If a model has both a ward save and Regeneration, you must choose which save is used.\nTo take a regeneration save, roll a D6. On a 1-3, the wound affects the model normally, even its incredible constitution has not prevented this injury. On a 4-6, the damaged flesh regrows, leaving not even so much as a scar to indicate the injury was ever there - the wound is discounted, exactly as if it had been saved by other means.\nWhilst the type of regeneration described above is the most common form, some creatures do have a lesser or greater chance to regenerate. Where this is the case, the score required to regenerate will be shown in brackets after the special rule, e.g. Regeneration (5+) would indicate that the model had the Regeneration rule, but that it only worked on a 5+, whilst Regeneration (2+) would mean that the creature would pass its regeneration save on a 2 or more!\nWounds caused by Flaming Attacks (as described earlier in this section) cannot be regenerated, and if a unit is wounded by a Flaming Attack it loses the Regeneration rule for the remainder of the phase (it can be used later in the turn, though - it just takes a short time for the Regeneration to overcome the flames).",
+      "requiresAttachedInput": true,
+      "statToReplaceWithInput": "st_rs"
+    },
+    {
+      "id": "sr_requiresTwoHands",
+      "name": "Requires Two Hands",
+      "description": "If a weapon requires two hands to use, it is not possible for a model to use a shield or an additional hand weapon alongside it in close combat (although a shield can still be used against wounds caused by shooting or magic). We assume that the warrior in question slings the spare wargear on his back, or simply drops it, until the fight is done."
+    },
+    {
+      "id": "sr_scalySkin",
+      "name": "Scaly Skin",
+      "description": "The hide of some creatures, the reptilian Lizardmen in particular, forms a kind of natural armour that grants the model an armour save. The degree of the scaly skin save varies from model to model, and will be stated in the relevant Warhammer Armies book.\nScaly Skin can be combined with normal armour for even greater protection. To determine a model's combined armour save, take the value of its scaly skin save and modify it one point better for light armour, one point better for a shield, two points better for heavy armour, and so on.",
+      "requiresAttachedInput": true,
+      "statToReplaceWithInput": "st_as"
+    },
+    {
+      "id": "sr_seaCreature",
+      "name": "Sea Creature",
+      "description": "Sea Creatures can move within any area of water on the battlefield, including rivers and even deep water that players may have deemed impassable to other models, as if it were open ground (see page 116 for more on terrain types). However, when out of the water they cannot march. Sea Creatures are still subject to any special effects that specific terrain may have (e.g. we don't exempt Sea Creatures from the dangers of marshes). Being a denizen of the deep seas does not necessarily equate to protection from a choking quagmire."
+    },
+    {
+      "id": "sr_slowToFire",
+      "name": "Slow To Fire",
+      "description": "Weapons with the Slow to Fire special rule cannot be used to Stand and Shoot."
+    },
+    {
+      "id": "sr_sniper",
+      "name": "Sniper",
+      "description": "A model with the Sniper special rule can make a special Sniper shot instead of shooting normally. A Sniper's shot suffers an additional -1 To Hit penalty, in addition to any other modifiers, but can be aimed with great precision.\nA model making a Sniper shot can shoot at a different target from the one chosen by his unit. A hit from a Sniper shot is not distributed in the same manner as other shooting attacks. The Sniper can shoot at any model he can see, including characters or champions within a unit and so on - the controlling player simply declares which model will be the Sniper's target - \"Look out Sir!\" cannot be taken.\nA Sniper shot can even target a character riding on the back of a ridden monster or chariot if he wishes, or indeed a specific model where the target is usually rolled for randomly (such as a character who has joined a war machine)."
+    },
+    {
+      "id": "sr_stomp",
+      "name": "Stomp",
+      "description": "A model with this special rule can make a Stomp in addition to its other close combat attacks. A Stomp has the Always Strikes Last special rule, and inflicts 1 automatic hit, at the model's Strength, on one enemy infantry, war beasts or swarm unit in base contact with the model. This represents the creature crushing the foe beneath its ponderous feet, or knocking their broken bodies aside with one sweep of its mighty tail (probably while it's roaring in a most intimidating fashion)."
+    },
+    {
+      "id": "sr_thunderStomp",
+      "name": "Thunderstomp",
+      "description": "A Thunderstomp makes D6 hits on the target unit, rather than the single hit for a normal Stomp. It is otherwise treated exactly like a normal Stomp.",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_stomp"
+        }
+      ]
+    },
+    {
+      "id": "sr_strider",
+      "name": "Strider",
+      "description": "Warriors with the Strider special rule are rare - normally, a model will have a subset of Strider, such as Forest Strider, River Strider or Marsh Strider and the rule only applies in terrain of the specified type. Warriors with the Strider rule do not have to take Dangerous Terrain tests.\nIn older army books, this rule is presented as something along the lines of 'ignores movement penalties for <terrain type>'. Treat such rules as being the relevant version of Strider. For example, 'ignores movement penalties for forests' equates to the Forest Strider rule.",
+      "requiresAttachedInput": true
+    },
+    {
+      "id": "sr_stubborn",
+      "name": "Stubborn",
+      "description": "Stubborn units are always steadfast, whether or not they have more ranks than their enemy (see page 54 for details). If a character joins a Stubborn unit, he gains the Stubborn special rule as long as he is part of that unit. If a Stubborn character joins a unit, that unit is Stubborn whilst he remains amongst its ranks."
+    },
+    {
+      "id": "sr_stupidity",
+      "name": "Stupidity",
+      "description": "Models that are subject to Stupidity are also Immune to Psychology - they just don't get frightened that easily, and by the time they do, it's normally too late.\nProvided that they are not engaged in close combat, a unit that contains one or more models with the Stupidity special rule must try to overcome its Stupidity at the start of its turn by taking a Leadership test. If the test is passed, all is well - the creatures have risen above their dull-witted nature and will act normally. If the test is failed, the warriors succumb to their stupidity and amble forward, perhaps drooling a little, eating grass or cackling in silly voices, as explained below.\n\nME 'EAD 'URTS\nA unit that fails its Stupidity test immediately stumbles D6\" directly forwards - this move is otherwise treated in exactly the same manner as a failed charge. The Stupid unit cannot take any further action that turn, so cannot declare charges or make a shooting attack. Wizards that have failed a Stupidity test cannot attempt to cast or channel power dice or dispel dice until a Stupidity test is passed (there's a lot of hand waving and chanting, but for some reason the magic just doesn't seem to work).",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_immuneToPsychology"
+        }
+      ]
+    },
+    {
+      "id": "sr_swiftstride",
+      "name": "Swiftstride",
+      "description": "When charging, units entirely made of models with the Swiftstride special rule roll 3D6, discard the lowest result, and add the result to their Move value.\nWhen fleeing and pursuing, units entirely made of models with the Swiftstride special rule roll 3D6 and discard the lowest result."
+    },
+    {
+      "id": "sr_skirmishers",
+      "name": "Skirmishers",
+      "description": "SKIRMISH FORMATION\nSkirmishers are deployed in a 'loose' formation, where the models are not placed in base contact, but are positioned roughly 1/2\" apart. The models in the unit must still face the same direction and the unit will still have a front, two flanks and a rear - essentially the only difference is that the models I are slightly spaced out.\nThis dispersed formation allows Skirmishers to move and shoot with greater freedom than other troop types.\n\nSKIRMISHERS AND CHARGING\nIf skirmishers declare a charge (or a charge reaction that does not involve fleeing) they immediately tighten their loose formation into a 'normal' formation before the charge distance is rolled. This happens 'for free' at the moment the unit declares\nthe charge or is called upon to make a charge reaction. The unit immediately forms up in base contact around the centremost model in the front rank - if the front rank has an even number of models, and therefore two centremost models, the Skirmishers' controlling player can choose which of the two models the unit will form up around.\nThe number of ranks, files and the formation's facing do not alter as the Skirmishers tighten up - all that happens is that models that were previously spaced out are now in base contact with one another. This has the effect of rendering the\nSkirmishers' loose formation into a regular shape so that other units can fight them in the normal way.\nIf the Skirmishers are not in base contact with an enemy in the Remaining Moves sub-phase, the controlling player must move them apart so that they readopt their loose formation.\n\nFREE REFORM\nA unit of Skirmishers moves, wheels, marches and charges just like other troops. However, due to the incredible flexibility of its formation, unless it charges, a skirmishing unit is allowed to reform as many times as it wishes during its move, provided that no model ends up moving a number of inches higher than double its Move value.\n\nFIRE ON THE MARCH\nAs with Fast Cavalry, Skirmishers are normally trained to aim and shoot more swiftly than other warriors. They can even shoot if they marched or reformed earlier in the turn (providing their weapon doesn't have the Move or Fire special rule). However, the normal -1 To Hit penalty for moving and shooting still applies.\n\nLIGHT TROOPS\nSkirmishers' natural inclination to a sparse formation makes them much less likely to suffer hits from missile fire - all shots aimed at a unit of Skirmishers suffer an additional -1 To Hit penalty. Skirmishers simply lack the necessary mass to push forward onto the enemy and are easily overwhelmed by troops used to fighting in grinding melee. Skirmishers always count as having zero ranks, and therefore cannot claim a rank bonus, be steadfast, or disorder an enemy with a flank or rear attack - they make supporting attacks as normal, however.\n\nCHARACTERS\nA character model that joins a unit of Skirmishers gains the Skirmisher special rule as long as he stays with the unit. A character on a mount cannot join a unit of Skirmishers."
+    },
+    {
+      "id": "sr_terror",
+      "name": "Terror",
+      "description": "Models that cause Terror also cause Fear, as discussed earlier in the chapter. In addition, a model that causes Terror is so, well, terrifying, that other rules also apply. It should be noted at this point that Fear-causing models, being quite scary themselves, treat Terror-causing monsters as causing Fear, rather than Terror - this is an exception to the rule that makes Fear-causing creatures immune to Fear. Terror-causing models are themselves immune to both Fear and Terror. This includes characters riding Terror-causing mounts, which count as causing Terror themselves (see page 105).\n\nRUN FOR YOUR LIVES!\nWhen a unit is charged by a Terror-causing creature, there is a chance that the warriors will abandon their position, fleeing before the creature rather than fighting it. If a Terror-causing creature declares a charge, the target unit must immediately take a panic test to quell their Terror. If the test is passed, all is well and the unit can declare charge reactions normally. If the test is foiled, the unit must make a Flee! charge reaction. Units composed entirely of Fear- or Terror-causing models are immune to Terror and so do not take this test. Note that, if the target unit is not allowed to take any charge reaction (if, for example, the Terror-causing unit charged as a result of a pursuit or a random move), then the target does not take this test."
+    },
+    {
+      "id": "sr_unbreakable",
+      "name": "Unbreakable",
+      "description": "A unit composed entirely of Unbreakable models is Immune to Psychology and passes Break tests automatically, no matter the odds!\nCharacters that are not themselves Unbreakable are not permitted to join units that are (even if a character was to become temporarily Unbreakable for some reason, because of a spell or suchlike).",
+      "attachedSpecialRules": [
+        {
+          "id": "sr_immuneToPsychology"
+        }
+      ]
+    },
+    {
+      "id": "sr_unstable",
+      "name": "Unstable",
+      "description": "The magic that empowers Unstable creatures is prone to ebbing and flowing with the tide of battle. The more heavily beset the Unstable creatures are, the more likely that the magic that binds them will fade away.\nUnstable units that lose a combat suffer one extra Wound for every point by which they lose the combat, with no saves of any kind permitted against these wounds.\nIf an Unstable unit also contains Unstable characters, or is an Unstable character riding an Unstable monster, the controlling player first allocates wounds to the unit/monster, then divides any remaining wounds (if any) as equally as possible amongst the characters.\nCharacters that are not themselves Unstable are not permitted to join units that are (even if they become temporarily unstable for some reason)."
+    },
+    {
+      "id": "sr_volleyFire",
+      "name": "Volley Fire",
+      "description": "A unit with this special rule can choose to Volley Fire instead of making a normal shooting attack.\nIf it does so, half the models in the third and any subsequent ranks, rounding up, are allowed to shoot (in addition to the usual firing models in the front and second ranks). Models in rear ranks can use the line of sight and front arc of the first rank model directly to their front for the purposes of Volley Fire.\nA unit cannot Volley Fire if it moved earlier in the turn, or as a Stand and Shoot reaction."
+    },
+    {
+      "id": "sr_ambushers",
+      "name": "Ambushers",
+      "description": "A unit with the Ambushers rule does not deploy at the start of the battle. Instead, from Turn 2 onwards, the controlling player rolls a dice at the start of the turn for each unit of his Ambushers that have yet to arrive. On a 1 or 2, the Ambushers have been delayed - but you'll be able to roll for them again next turn. On a 3 or more, the unit of Ambushers arrives, and will enter the board during the Remaining Moves sub-phase. If the Ambushers do not turn up for the entire game, they are assumed to have got lost, and are treated as having fled the battle for the purposes of determining the victor.\nArriving Ambushers enter the battlefield from any point on any battlefield edge, and move on using the rules for reinforcements (see page 27)."
+    },
+    {
+      "id": "sr_scout",
+      "name": "Scout",
+      "description": "Scouts are set up after all other non-Scout units from both armies have been deployed. They can be set up either in their controlling player's deployment zone, or anywhere on the battlefield more than 12\" away from the enemy. If deployed in this second way, Scouts cannot declare a charge in the first turn if their side goes first.\nIf both players' armies contain Scouts, players should roll off. The players then alternate deploying their scouting units one at a time, starting with the player who won the roll-off."
+    },
+    {
+      "id": "sr_vanguard",
+      "name": "Vanguard",
+      "description": "After both sides have deployed all their other forces (including Scouts), but before either side has taken a turn, units with the Vanguard special rule can immediately make a 12\" move regardless of their Movement value (they can't march, and are affected by terrain as normal). This cannot be used to move the Vanguard troops to within 12\" of the enemy.\nIf both players' armies contain Vanguard troops, players should roll off. The players then alternate moving their Vanguard units one at a time, starting with the player who won the roll-off.\nUnits that have made a Vanguard move cannot declare a charge in the first turn if their army goes first."
+    },
+    {
+      "id": "sr_blackPowderWarMachineMisfireChart",
+      "name": "Black Powder War Machine Misfire Chart",
+      "description": "D6 Result\n\n1-2 Destroyed!\nThe gun explodes with a thunderous noise. Shards of metal and wood fly in all directions, leaving a hole in the ground and a cloud of black acrid smoke. The war machine is destroyed.\n\n3-4 Malfunction\nThe charge fails to ignite and the barrel must be emptied before the war machine can fire again. The war machine therefore cannot fire this turn or in the controlling player's next turn. Either turn the war machine model round or place a marker of some kind to indicate this.\n\n5-6\nMay not Shoot. A minor error has occurred, perhaps the fuse was not properly set or the crewmen mishandled the loading procedure. The war machine is unharmed and can shoot as normal again in the controlling player's next turn."
+    },
+    {
+      "id": "sr_stoneThrowerMisfireChart",
+      "name": "Stone Thrower Misfire Chart",
+      "description": "D6 Result\n\n1 Destroyed!\nThe stone thrower cannot take the strain! Bits of wood and metal fly all around, the stone tumbles to the ground, crushing the war machine and throwing debris into the air. The war machine is destroyed.\n\n2-3 Disabled\nA freak occurrence disrupts the normal smooth operation of the stone thrower, and one of the crew has been caught in the firing mechanism - the stone thrower suffers a wound, with no armour saves allowed. This problem can only be fixed by partially dismantling the war machine and so the stone thrower therefore cannot fire this turn or in the controlling player's next turn. Either turn the war machine around or place a marker of some kind to indicate this.\n\n4-6 May not Shoot\nA minor error has occurred, perhaps the stone was dropped or part of the machinery jams. The stone thrower is unharmed and can shoot as normal again in the controlling player's next turn."
+    },
+    {
+      "id": "sr_directDamage",
+      "name": "Direct Damage",
+      "description": "Direct damage spells are deadly attacks that strike the foe without warning. Direct damage spells can only ever be cast on enemy units. Sometimes a direct damage spell will use a template to determine which models are hit. When this happens, the template cannot be placed in such a way that it touches friendly units or enemy units that are in close combat - this is not to say that the template won't scatter onto friends later, depending on the spell."
+    },
+    {
+      "id": "sr_magicMissile",
+      "name": "Magic Missile",
+      "description": "Magic missiles are sorcerous projectiles that the Wizard hurls at his foe. Magic missiles can only be cast on enemy units. Unlike other types of spells, magic missiles do require the Wizard to be able to see his target. Accordingly, a Wizard can only cast a magic missile at a target that lies within his forward arc and to which he can trace line of sight (just as if the wizard was firing a missile weapon). Magic missiles cannot be cast at all if the Wizard (or his unit) is engaged in close combat. Magic missiles always hit their target automatically."
+    },
+    {
+      "id": "sr_augment",
+      "name": "Augment",
+      "description": "Augment spells empower the caster's allies, protecting them with sorcerous wards and magically enhancing their fighting prowess. Augment spells can never be cast on enemy units, no matter what benefit the player believes he might get. Augment spells can even be cast onto units in close combat to give them a much-needed boost. Also, targets of augment spells need not lie in the the caster's forward arc."
+    },
+    {
+      "id": "sr_hex",
+      "name": "Hex",
+      "description": "Hex spells are the counterpoint to augment spells, weakening the enemy and making them easier to slay. Hex spells can only ever be cast on enemy units. Hexes can be cast onto units in close combat. Targets of hex spells need not lie in the the caster's forward arc."
+    },
+    {
+      "id": "sr_magicalVortex",
+      "name": "Magical Vortex",
+      "description": "Magical vortexes are roiling globes of magical energy that travel across the battlefield, wreaking all kinds of unusual (and often deadly) effects. A magical vortex does not have a target instead it uses one of the round templates, which is placed in base contact with the caster and with its centre within the caster's front arc, and then moves as described in the spell.\nUnlike most other spells and other gaming effects that use templates in Warhammer, magical vortexes remain on the battlefield (unless they move off it). At the end of every subsequent Magic phase, each magical vortex moves in the direction and distance stated in the spell. If a magical vortex ever ends its move over a unit, place it 1\" beyond the unit in the direction it was moving. Magical vortexes are always remains in play spells (see page 36)."
+    },
+    {
+      "id": "sr_remainsInPlay",
+      "name": "Remains In Play",
+      "description": "Spells marked 'remains in play' stay in effect indefinitely when cast. They only come to an end when the target is slain, or else the caster is slain, chooses to end the spell (which he can do at any time) or leaves the battlefield. The Wizard can continue to cast other spells (but not the same remains in play spell in subsequent turns) as he requires only a little concentration to keep a remains in play spell going.\nIf they are not dispelled immediately when they are cast, remains in play spells can be dispelled at any point during a subsequent Magic phase, using dispel dice as normal, or dice from the power pool as if they were dispel dice if it is your turn.\nRemains in play spells do not retain the energy of their casting, and so a Wizard does not need to beat the original casting dice roll if attempting a dispel in subsequent turns, but rather the minimum casting value listed in the spell's description (so there is no need to make note of each spell's casting roll). For this reason, remains in play spells cast with irresistible force can be dispelled as normal in subsequent turns A Wizard who fails to dispel a remains in play spell during his own or the enemy Magic phase, cannot attempt further dispel or casting attempts for the remainder of the phase."
+    },
+    {
+      "id": "sr_boundSpell",
+      "name": "Bound Spell",
+      "description": "Some magic items, often rings and amulets, and certain troop types, have the ability to use a form of magic called a 'bound spell'. Bound spells can be used even if the bearer has broken his concentration or is not a Wizard at all. Possessing a bound spell does not make a character a Wizard - he just has an item that can cast a spell.\n\nCASTING BOUND SPELLS\nA bound spell is cast just like an ordinary spell - using dice from the power pool (the model may do so even if it is not a Wizard). The required casting value is equal to the bound spell's power level. Note that bound spells never benefit from any casting modifiers that the user might have (for Wizard level, magic items, and so forth). On the other hand, failing to cast a bound spell does not break a wizard's concentration, as using an item that contains a bound spell normally would not require anything more complex than uttering a single word of activation.\nFor example, a High Elf Noble has the Ruby Ring of Ruin, a magic item that contains the lowest level of Fireball as a bound spell. of power level 3. Therefore, when the Noble attempts to cast the spell, the casting roll must be equal to or greater than 3. If the Ruby Ring of Ruin was instead borne by a Level 2 High Elf Mage, he too would need the casting roll to be equal to or greater than 3 - he cannot use his +2 level bonus to boost the score.\nAs in the example above, bound spells are often tied into a spell from a magic lore. Where this is the case and there is a choice of casting levels, the bound spell is always the easier 'unboosted' version with the lower casting level.\n\nDISPELLING BOUND SPELLS \nBound spells are dispelled exactly as other spells - the dispelling Wizard must equal or beat the casting result for a successful dispel.\n\nIRRESISTIBLE FORCE\nA bound spell can be cast with irresistible force, just as a normal spell, by rolling two natural 6s in the casting roll. The bound spell is then cast automatically, and cannot be dispelled (but, of course, causes a miscast).\n\nMiscasts\nWhat happens when a bound spell is miscast depends on the nature of the bound spell.\n• If the bound spell is contained within a magic item of some kind, the item crumbles to dust and cannot be used again during the game. Do not roll on the Miscast table.\n• If the bound spell is an 'innate' ability - such as those used by a Warrior Priest, for example, then the model simply cannot cast further bound spells during this phase. Do not roll on the Miscast table.",
+      "requiresAttachedInput": true
+    },
+    {
+      "id": "sr_ignoresArmourSaves",
+      "name": "Ignores Armour Saves",
+      "description": "Armour saves cannot be taken against this weapon."
+    }
+  ],
+  "unitCategories": [
+    {
+      "id": "uc_in",
+      "name": "Infantry"
+    },
+    {
+      "id": "uc_mi",
+      "name": "Monstrous Infantry"
+    },
+    {
+      "id": "uc_cv",
+      "name": "Calvary"
+    },
+    {
+      "id": "uc_mc",
+      "name": "Monstrous Calvary"
+    },
+    {
+      "id": "uc_mo",
+      "name": "Monsters"
+    },
+    {
+      "id": "uc_sw",
+      "name": "Swarms"
+    },
+    {
+      "id": "uc_wb",
+      "name": "War Beasts"
+    },
+    {
+      "id": "uc_mb",
+      "name": "Monstrous Beasts"
+    },
+    {
+      "id": "uc_ch",
+      "name": "Chariots"
+    },
+    {
+      "id": "uc_un",
+      "name": "Unique Units"
+    },
+    {
+      "id": "uc_wm",
+      "name": "War Machines"
+    },
+    {
+      "id": "uc_mn",
+      "name": "Mount"
+    }
+  ],
+  "optionCategories": [
+    {
+      "id": "oc_wg",
+      "name": "Wargear"
+    },
+    {
+      "id": "oc_mi",
+      "name": "Magic Items"
+    },
+    {
+      "id": "oc_ml",
+      "name": "Magic Lore",
+      "statsToDisplay": [
+        {
+          "id": "stat_ln",
+          "displayIfZero": "Signature Spell"
+        },
+        {
+          "id": "stat_cv",
+          "displayIfZero": "Auto Cast"
+        }
+      ]
+    },
+    {
+      "id": "oc_ch",
+      "name": "Characters"
+    }
+  ],
+  "optionGroups": [
+    {
+      "id": "options_wp",
+      "categoryOptionsId": "oc_wg",
+      "name": "Weapons",
+      "statsToDisplay": [
+        {
+          "id": "stat_rn",
+          "displayIfZero": "Combat"
+        },
+        {
+          "id": "stat_st",
+          "displayIfZero": "As user"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "wp_bw",
+          "name": "Bow",
+          "description": "The bow is used extensively in warfare. It is a compact, long-ranged weapon that is cheap to make and easy to maintain.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 24
+            },
+            {
+              "id": "stat_st",
+              "value": 3
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_volleyFire"
+            }
+          ]
+        },
+        {
+          "id": "wp_cb",
+          "name": "Crossbow",
+          "description": "A crossbow consists of a short, strong bow stave mounted on a wooden or metal stock. It takes a long time to load and wind a crossbow, but each shot has tremendous range and power.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 30
+            },
+            {
+              "id": "stat_st",
+              "value": 4
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_moveOrFire"
+            }
+          ]
+        },
+        {
+          "id": "wp_fl",
+          "name": "Flail",
+          "description": "A flail is a cumbersome, heavy weapon used with both hands. It consists of heavy weights, often spiked, attached to a pole or handle by heavy chains. A flail drains the user's stamina quickly, but is incredibly destructive on the charge, its impact smashing shields and splintering bones.",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 2,
+              "displayAsConditional": true,
+              "conditionalDescription": "* A flail's Strength bonus applies only in the first round of close combat."
+            }
+          ],
+          "specialRules": [
+            {
+              "id": "sr_requiresTwoHands"
+            }
+          ]
+        },
+        {
+          "id": "wp_gw",
+          "name": "Great Weapon",
+          "description": "Great weapons are especially large and heavy weapons wielded with both hands. This includes great hammers, great axes, two-handed swords and suchlike. A blow from a great weapon can cut a foe in half and break apart the thickest armour.",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 2
+            }
+          ],
+          "specialRules": [
+            {
+              "id": "sr_requiresTwoHands"
+            },
+            {
+              "id": "sr_alwaysStrikesLast"
+            }
+          ]
+        },
+        {
+          "id": "wp_ha",
+          "name": "Halberd",
+          "description": "The halberd is a heavy bladed weapon mounted on a sturdy shaft. The steel blade has a point like a spear as well as a heavy cutting edge like an axe. It is held in both hands and used to chop as well as thrust.",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 1
+            }
+          ],
+          "specialRules": [
+            {
+              "id": "sr_requiresTwoHands"
+            }
+          ]
+        },
+        {
+          "id": "wp_hg",
+          "name": "Handgun",
+          "description": "A handgun is a simple firearm consisting of a metal barrel mounted on a wooden stock. Some of the more advanced versions have levers and springs that hold the burning match or flint and release the firing mechanism to trigger the gun.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 24
+            },
+            {
+              "id": "stat_st",
+              "value": 4
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_armourPiercing"
+            },
+            {
+              "id": "sr_moveOrFire"
+            }
+          ]
+        },
+        {
+          "id": "wp_hw",
+          "name": "Hand Weapon",
+          "description": "If a warrior is fighting with a hand weapon and a shield, then he has a 6+ ward save, representing his chance to parry the blow - even the mightiest axe strike can be turned aside at the last moment if the timing is right.\nThis parry save only works against attacks made in close combat. It cannot be used against attacks made against the warrior's flank or rear (he doesn't have enough freedom of movement to turn around quickly enough), nor can it be used against Impact Hits or hits from Stomp attacks (there's no parrying something that big).\nAs a final caveat, the parry save cannot be claimed by Frenzied warriors - they're far too bonkers to think overmuch about their own personal safety -nor can it be used by mounted models.",
+          "stats": [],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_extraAttack",
+              "displayAsConditional": true,
+              "conditionalDescription": "Some warriors carry two hand weapons, one in each hand, and can rain down even more blows on their enemy. An additional hand weapon cannot be used by a mounted model, or by a model that has a magical close combat weapon.",
+              "pairedWithItself": true,
+              "pairedWithUnitCategories": [
+                "uc_in",
+                "uc_mi",
+                "uc_mo",
+                "uc_mb",
+                "uc_sw",
+                "uc_wb"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wp_jv",
+          "name": "Javelin",
+          "description": "The javelin is a light spear designed for throwing, too flimsy to be used in hand-to-hand fighting. It is not a very common weapon as it has a short range, but the amphibious Skinks of Lustria use javelins extensively. A model is assumed to have sufficient javelins to last the battle.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 12
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_quickToFire"
+            }
+          ]
+        },
+        {
+          "id": "wp_ln",
+          "name": "Lance",
+          "description": "A lance is a heavier, longer version of the spear, which cannot be used by models on foot.",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 2,
+              "displayAsConditional": true,
+              "conditionalDescription": "* A lance is only used in a turn in which the wielder charged into combat. In subsequent turns (or if the wielder did not charge) the model uses its hand weapon.",
+              "pairedWithUnitCategories": ["uc_cv", "uc_mc", "uc_ch"]
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "wp_lb",
+          "name": "Longbow",
+          "description": "A longbow is a dangerous weapon - a skilled archer can hit an enemy from a great distance with punishing force.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 30
+            },
+            {
+              "id": "stat_st",
+              "value": 3
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_volleyFire"
+            }
+          ]
+        },
+        {
+          "id": "wp_ms",
+          "name": "Morning Star",
+          "description": "A morning star is a single-handed weapon that consists of one or more spiked balls on a chain. Like the larger flail it resembles, it is a tiring weapon so its advantage lies with the initial blow.",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 1,
+              "displayAsConditional": true,
+              "conditionalDescription": "* A morning star's Strength bonus applies only in the first round of combat."
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "wp_pi",
+          "name": "Pistol",
+          "description": "Pistols are small weapons that employ a noxious and unreliable form of gunpowder to propel a small lead or stone ball. Unlike other weapons, a pistol can be used as both a missile weapon and a close combat weapon, following the same rules as an additional hand weapon.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 12
+            },
+            {
+              "id": "stat_st",
+              "value": 4
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_armourPiercing"
+            },
+            {
+              "id": "sr_quickToFire"
+            }
+          ]
+        },
+        {
+          "id": "wp_bp",
+          "name": "Brace of Pistols",
+          "description": "If a model carries two or more pistols (a 'brace') it uses them simultaneously, both in combat and when shooting.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 12
+            },
+            {
+              "id": "stat_st",
+              "value": 4
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_armourPiercing"
+            },
+            {
+              "id": "sr_quickToFire"
+            },
+            {
+              "id": "sr_multipleShots",
+              "specialRuleValue": 2
+            },
+            {
+              "id": "sr_extraAttack",
+              "displayAsConditional": true,
+              "conditionalDescription": "* Grants an Extra Attack to models on foot only.",
+              "pairedWithUnitCategories": [
+                "uc_in",
+                "uc_mi",
+                "uc_mo",
+                "uc_mb",
+                "uc_sw",
+                "uc_wb"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wp_sb",
+          "name": "Shortbow",
+          "description": "Shortbows are small, short-ranged bows that are favoured by Goblins. Some cavalry also carry a shortbow because it is easier to shoot from horseback.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 18
+            },
+            {
+              "id": "stat_st",
+              "value": 3
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_volleyFire"
+            }
+          ]
+        },
+        {
+          "id": "wp_sl",
+          "name": "Sling",
+          "description": "Slings consist of a looped string of cloth or leather into which a stone is placed and then thrown with surprising strength and accuracy.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 18
+            },
+            {
+              "id": "stat_st",
+              "value": 3
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_multipleShots",
+              "specialRuleValue": 2
+            }
+          ]
+        },
+        {
+          "id": "wp_sp",
+          "name": "Spear",
+          "description": "On Foot: Spears are long shafts of wood with a sharp metal tip. Because braced spearmen can fight in an additional rank, spears are ideal defensive weapons for infantry.\nMounted: Riders armed with spears ride down footmen, spitting them as they gallop into their ranks.",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 1,
+              "displayAsConditional": true,
+              "conditionalDescription": "* A spear is only used in a turn in which the wielder charged into combat. In subsequent turns (or if the wielder did not charge) the model uses its hand weapon.",
+              "pairedWithUnitCategories": ["uc_cv", "uc_mc", "uc_ch"]
+            }
+          ],
+          "specialRules": [
+            {
+              "id": "sr_fightInExtraRank",
+              "displayAsConditional": true,
+              "conditionalDescription": "* Does not apply on a turn in which the model charged.",
+              "pairedWithUnitCategories": [
+                "uc_in",
+                "uc_mi",
+                "uc_mo",
+                "uc_mb",
+                "uc_sw",
+                "uc_wb"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "wp_ts",
+          "name": "Throwing Weapons",
+          "description": "Throwing weapons, such as stars and knives, are small, easily concealed weapons and, consequently, they are favoured by assassins and lightly armed infiltrators. A model is assumed to have sufficient throwing weapons to last the battle.",
+          "stats": [],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_quickToFire"
+            }
+          ]
+        },
+        {
+          "id": "wp_ta",
+          "name": "Throwing Axes",
+          "description": "These weapons are keenly balanced so they can be thrown accurately despite their weight. Even so, the strongest warrior cannot throw such a weapon very for, but if a throwing axe hits its target, the effect is devastating. A model is assumed to have sufficient throwing axes to last the battle.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 6
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 1
+            }
+          ],
+          "specialRules": [
+            {
+              "id": "sr_quickToFire"
+            }
+          ]
+        },
+        {
+          "id": "wp_bt",
+          "name": "Bolt Thrower",
+          "description": "Bolt throwers are huge crossbows that shoot a spear-sized missile. A crew of two or more is required to wind back the powerful torsion arms and position the huge bolt ready for firing.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 48
+            },
+            {
+              "id": "stat_st",
+              "value": 6
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_multipleWounds",
+              "textInputToAdd": "D3"
+            },
+            {
+              "id": "sr_ignoresArmourSaves"
+            }
+          ]
+        },
+        {
+          "id": "wp_cn",
+          "name": "Cannon",
+          "description": "Cannons are devastating, if sometimes unpredictable, weapons whose manufacture is limited to few races. When they work, cannons can shatter the most determined enemy, slamming roundshot after roundshot into massed formations. However, cannons can go wrong. The black powder charge can fail to ignite, or explode prematurely. Worse, weaknesses in casting methods can leave minute cracks or other deficiencies, which lead to the cannon exploding when fired.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 48
+            },
+            {
+              "id": "stat_st",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_multipleWounds",
+              "textInputToAdd": "D6"
+            },
+            {
+              "id": "sr_blackPowderWarMachineMisfireChart"
+            }
+          ]
+        },
+        {
+          "id": "wp_gc",
+          "name": "Great Cannon",
+          "description": "Cannons are devastating, if sometimes unpredictable, weapons whose manufacture is limited to few races. When they work, cannons can shatter the most determined enemy, slamming roundshot after roundshot into massed formations. However, cannons can go wrong. The black powder charge can fail to ignite, or explode prematurely. Worse, weaknesses in casting methods can leave minute cracks or other deficiencies, which lead to the cannon exploding when fired.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 60
+            },
+            {
+              "id": "stat_st",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_multipleWounds",
+              "textInputToAdd": "D6"
+            },
+            {
+              "id": "sr_blackPowderWarMachineMisfireChart"
+            }
+          ]
+        },
+        {
+          "id": "wp_gs",
+          "name": "Grapeshot",
+          "description": "Instead of firing normal shot, cannon crew can opt to fire grapeshot. They do this by loading the gun with rusty nails, handgun bullets and other small projectiles — effectively creating a huge blunderbuss.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 12
+            },
+            {
+              "id": "stat_st",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_armourPiercing"
+            },
+            {
+              "id": "sr_blackPowderWarMachineMisfireChart"
+            }
+          ]
+        },
+        {
+          "id": "wp_ft",
+          "name": "Fire Thrower",
+          "description": "Though its designs are many and varied, a fire thrower always consists of an airtight copper-lined barrel and a fluid chamber filled with a sticky alchemical sludge - normally a mixture of sulphurous compounds, black powder and combustible oils.\nWhen triggered, the fire thrower sets loose a burst of these noxious chemicals, which immediately set light upon contact with the air, incinerating anyone unfortunate enough to be caught in the blast.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "value": 0,
+              "overrideZeroText": "n/a"
+            },
+            {
+              "id": "stat_st",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_flamingAttacks"
+            },
+            {
+              "id": "sr_blackPowderWarMachineMisfireChart"
+            }
+          ]
+        },
+        {
+          "id": "wp_st",
+          "name": "Stone Thrower",
+          "description": "Stone throwers are destructive weapons that lob large rocks into the air, sending them crashing down into the enemy ranks. The largest stone throwers can hurl a projectile big enough to flatten monsters or knock down city walls.",
+          "stats": [
+            {
+              "id": "stat_rn",
+              "minValue": 12,
+              "maxValue": 60,
+              "overrideZeroText": "n/a"
+            },
+            {
+              "id": "stat_st",
+              "value": 3,
+              "secondaryValue": 9
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_multipleWounds",
+              "textInputToAdd": "D6"
+            },
+            {
+              "id": "sr_stoneThrowerMisfireChart"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_ar",
+      "categoryOptionsId": "oc_wg",
+      "name": "armour",
+      "optionItems": [
+        {
+          "id": "ar_sh",
+          "name": "Shield",
+          "description": "",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            }
+          ],
+          "specialRules": [
+            {
+              "id": "sr_parrySave",
+              "displayAsConditional": true,
+              "conditionalDescription": "If a warrior is fighting with a hand weapon and a shield, then he has a 6+ ward save, representing his chance to parry the blow - even the mightiest axe strike can be turned aside at the last moment if the timing is right.\nThis parry save only works against attacks made in close combat. It cannot be used against attacks made against the warrior's flank or rear (he doesn't have enough freedom of movement to turn around quickly enough), nor can it be used against Impact Hits or hits from Stomp attacks (there's no parrying something that big).\nAs a final caveat, the parry save cannot be claimed by Frenzied warriors - they're far too bonkers to think overmuch about their own personal safety -nor can it be used by mounted models.",
+              "pairedWithUnitCategories": [
+                "uc_in",
+                "uc_mi",
+                "uc_mo",
+                "uc_mb",
+                "uc_sw",
+                "uc_wb"
+              ],
+              "notValidWithPairedSpecialRules": ["sr_frenzy"]
+            }
+          ]
+        },
+        {
+          "id": "ar_la",
+          "name": "Light armour",
+          "description": "",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "ar_ha",
+          "name": "Heavy armour",
+          "description": "",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 2
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "ar_mn",
+          "name": "Mounted",
+          "description": "",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "ar_ba",
+          "name": "Barding",
+          "description": "",
+          "stats": [],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            },
+            {
+              "id": "stat_mv",
+              "value": -1
+            }
+          ],
+          "specialRules": []
+        }
+      ]
+    },
+    {
+      "id": "options_mw",
+      "categoryOptionsId": "oc_mi",
+      "name": "Magical Weapons",
+      "specialRules": [
+        {
+          "id": "sr_magicalAttacks"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "mw_gb",
+          "name": "Giant Blade",
+          "description": "Close combat attacks made with this sword are resolved at +3 Strength.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 60
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 3
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "mw_sb",
+          "name": "Sword of Bloodshed",
+          "description": "The wielder has +3 Attacks.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 60
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_at",
+              "value": 3
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "mw_ob",
+          "name": "Obsidian Blade",
+          "description": "Armour saves cannot be taken against wounds caused by the Obsidian Blade.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 50
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_ignoresArmourSaves"
+            }
+          ]
+        },
+        {
+          "id": "mw_og",
+          "name": "Ogre Blade",
+          "description": "Close combat attacks made with this sword are resolved at +2 Strength.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 40
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 2
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "mw_ss",
+          "name": "Sword of Strife",
+          "description": "This wielder of the Sword of Strife has +2 Attacks.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 40
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_at",
+              "value": 2
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "mw_fb",
+          "name": "Fencer's Blades",
+          "description": "Paired weapons. The bearer has Weapon Skill 10.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 35
+            },
+            {
+              "id": "stat_ws",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_extraAttack"
+            }
+          ],
+          "notValidWithPairedOption": ["ar_sh"]
+        },
+        {
+          "id": "mw_ah",
+          "name": "Sword of Anti-Heroes",
+          "description": "The bearer has +1 Strength and +1 Attack for every enemy character in base contact with him or his unit. These bonuses are calculated at the start of each round of close combat and last until its end.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 30
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "mw_st",
+          "name": "Spellthieving Sword",
+          "description": "A Wizard that suffers unsaved wounds from the Spellthieving Sword loses one of his spells (determined randomly) for each unsaved wound.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "mw_sl",
+          "name": "Sword of Swift Slaying",
+          "description": "The wielder of the Sword of Swift Slaying has the Always Strikes First special rule.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_alwaysStrikesFirst"
+            }
+          ]
+        },
+        {
+          "id": "mw_ba",
+          "name": "Sword of Battle",
+          "description": "The wielder has +1 Attack.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 20
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_at",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "mw_be",
+          "name": "Beserker Sword",
+          "description": "The bearer has the Frenzy special rule and can never lose his Frenzy.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 20
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_frenzy"
+            }
+          ]
+        },
+        {
+          "id": "mw_mt",
+          "name": "Sword of Might",
+          "description": "Close combat attacks made with this sword are resolved at +1 Strength.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 20
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_st",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "mw_gs",
+          "name": "Gold Sigil Sword",
+          "description": "Attacks from the Gold Sigil Sword are made at Initiative 10.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            },
+            {
+              "id": "stat_in",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "mw_sk",
+          "name": "Sword of Striking",
+          "description": "Attacks made with the Sword of Striking receive a +1 bonus to hit.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "mw_bb",
+          "name": "Biting Blade",
+          "description": "Close combat attacks made by the Biting Blade are armour piercing.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "mw_rs",
+          "name": "Relic Sword",
+          "description": "Attacks made with the Relic Sword will always wound on a 5+, unless they would normally need a lower result.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "mw_sh",
+          "name": "Shrieking Blade",
+          "description": "The bearer causes Fear.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_fear"
+            }
+          ]
+        },
+        {
+          "id": "mw_to",
+          "name": "Tormentor Sword",
+          "description": "A monster or character that suffers an unsaved wound from the Tormentor sword has the Stupidity special rule for the rest of the game.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "mw_wb",
+          "name": "Warrior Bane",
+          "description": "A monster or character that suffers unsaved wounds from Warrior Bane permanendy loses one Attack for each unsaved wound (to a minimum of Attacks 1).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        }
+      ]
+    },
+    {
+      "id": "options_ms",
+      "categoryOptionsId": "oc_mi",
+      "name": "Magical Shields",
+      "replacesOptions": ["ar_sh"],
+      "optionItems": [
+        {
+          "id": "ms_pt",
+          "name": "Shield of Ptolos",
+          "description": "Shield. The bearer has a 1 + armour save against shooting attacks.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            },
+            {
+              "id": "stat_as",
+              "value": 1,
+              "displayAsConditional": true,
+              "conditionalDescription": "The bearer has a 1 + armour save against shooting attacks."
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ms_ss",
+          "name": "Spellshield",
+          "description": "Shield. The bearer gains Magic Resistance (1).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 20
+            },
+            {
+              "id": "stat_mr",
+              "value": 1
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "ms_es",
+          "name": "Enchanted Shield",
+          "description": "Shield. The bearer counts his armour save as being two points higher than normal, rather than the usual one point that a shield would normally grant.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 2
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "ms_cs",
+          "name": "Charmed Shield",
+          "description": "Shield. One use only. The first hit suffered by the bearer of the Charmed Shield is discounted on a roll of 2+.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        }
+      ]
+    },
+    {
+      "id": "options_ma",
+      "categoryOptionsId": "oc_mi",
+      "name": "Magical armour",
+      "optionItems": [
+        {
+          "id": "ma_ad",
+          "name": "Armour of Destiny",
+          "description": "Heavy armour. The Armour of Destiny grants the wearer a 4+ ward save.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 50
+            },
+            {
+              "id": "stat_wd",
+              "value": 4
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 2
+            }
+          ],
+          "specialRules": [],
+          "replacesOptions": ["ar_ha", "ar_la"]
+        },
+        {
+          "id": "ma_th",
+          "name": "Tricketer's Helm",
+          "description": "The wearer counts his armour save as being one point higher than normal. Any successful roll to wound made against the wearer of the Trickster's Helm must be re-rolled.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 50
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "ma_ss",
+          "name": "Armour of Silvered Steel",
+          "description": "The Armour of Silvered Steel grants its wearer a 2+ armour save that cannot be improved by any means.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 45
+            },
+            {
+              "id": "stat_as",
+              "value": 2,
+              "unchangeable": true
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ma_fr",
+          "name": "Armour of Fortune",
+          "description": "Heavy armour. The Armour of Fortune grants the wearer a 5+ ward save.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 35
+            },
+            {
+              "id": "stat_wd",
+              "value": 5,
+              "unchangeable": true
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 2
+            }
+          ],
+          "specialRules": [],
+          "replacesOptions": ["ar_ha", "ar_la"]
+        },
+        {
+          "id": "ma_hd",
+          "name": "Helm of Discord",
+          "description": "The wearer counts his armour save as being one point higher than normal. In addition, at the start of each Close Combat phase, choose an enemy character in base contact with the bearer or his unit. That character must immediately take a Leadership test. If the test is failed, the character succumbs to the helm's sibilant whispers of malice and jealousy. In this Close Combat phase, the victim cannot make attacks and is hit automatically.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 30
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "ma_gs",
+          "name": "Glittering Scales",
+          "description": "Light armour. Enemies suffer a -1 to hit penalty when attempting to strike the wearer in close combat.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            }
+          ],
+          "specialRules": [],
+          "replacesOptions": ["ar_ha", "ar_la"]
+        },
+        {
+          "id": "ma_ga",
+          "name": "Gambler's Armour",
+          "description": "Heavy armour. The Gambler's Armour grants the wearer a 6+ ward save.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 20
+            },
+            {
+              "id": "stat_wd",
+              "value": 6
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 2
+            }
+          ],
+          "specialRules": [],
+          "replacesOptions": ["ar_ha", "ar_la"]
+        },
+        {
+          "id": "ma_dr",
+          "name": "Dragonhelm",
+          "description": "The wearer counts his armour save as being one point higher than normal. The wearer has a 2+ ward save against flaming attacks.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 10
+            },
+            {
+              "id": "stat_wd",
+              "value": 2,
+              "displayAsConditional": true,
+              "conditionalDescription": "* The wearer has a 2+ ward save against flaming attacks."
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_as",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        }
+      ]
+    },
+    {
+      "id": "options_ta",
+      "categoryOptionsId": "oc_mi",
+      "name": "Talismans",
+      "optionItems": [
+        {
+          "id": "ta_pr",
+          "name": "Talisman of Preservation",
+          "description": "The Talisman of Reservation grants the bearer a 4+ ward save.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 45
+            },
+            {
+              "id": "stat_wd",
+              "value": 4
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ta_ol",
+          "name": "Obsidian Lodestone",
+          "description": "The Obsidian Lodestone grants Magic Resistance (3).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 45
+            },
+            {
+              "id": "stat_mr",
+              "value": 3
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ta_oa",
+          "name": "Obsidian Amulet",
+          "description": "The Obsidian Amulet grants Magic Resistance (2).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 30
+            },
+            {
+              "id": "stat_mr",
+              "value": 2
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ta_ds",
+          "name": "Dawnstone",
+          "description": "The bearer re-rolls failed armour saves",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ta_op",
+          "name": "Opal Amulet",
+          "description": "One use only. The Opal Amulet bestows a 4+ ward save against the first wound suffered by the bearer, after which its power fades and it cannot be used again during the game.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            },
+            {
+              "id": "stat_wd",
+              "value": 4,
+              "displayAsConditional": true,
+              "conditionalDescription": "The Opal Amulet bestows a 4+ ward save against the first wound suffered by the bearer, after which its power fades and it cannot be used again during the game."
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ta_ot",
+          "name": "Obsidian Trinket",
+          "description": "The Obsidian Trinket grants Magic Resistance (1).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            },
+            {
+              "id": "stat_mr",
+              "value": 1
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ta_tp",
+          "name": "Talisman of Protection",
+          "description": "The Talisman of Protection grants the bearer a 6+ ward save.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            },
+            {
+              "id": "stat_wd",
+              "value": 6
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ta_tp",
+          "name": "Seed of Rebirth",
+          "description": "The bearer of the Seed of Rebirth has the Regeneration (6+) special rule.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_regeneration",
+              "specialRuleValue": 6
+            }
+          ]
+        },
+        {
+          "id": "ta_dg",
+          "name": "Dragonbane Gem",
+          "description": "The bearer of the Dragonbane Gem has a 2+ ward save against flaming attacks.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            },
+            {
+              "id": "stat_wd",
+              "value": 2,
+              "displayAsConditional": true,
+              "conditionalDescription": "* The bearer of the Dragonbane Gem has a 2+ ward save against flaming attacks."
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ta_pp",
+          "name": "Pidgeon Plucker Pendent",
+          "description": "This item grants the bearer a 5+ ward save against wounds caused in close combat by models that have the Fly special rule.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            },
+            {
+              "id": "stat_wd",
+              "value": 5,
+              "displayAsConditional": true,
+              "conditionalDescription": "* This item grants the bearer a 5+ ward save against wounds caused in close combat by models that have the Fly special rule."
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ta_lu",
+          "name": "Luckstone",
+          "description": "One use only. The Luckstone allows the bearer to re-roll a single failed armour save.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        }
+      ]
+    },
+    {
+      "id": "options_st",
+      "categoryOptionsId": "oc_mi",
+      "name": "Magical Standards",
+      "requiredKeywords": ["kw_standardBearer"],
+      "optionItems": [
+        {
+          "id": "ms_rs",
+          "name": "Rampager's Standard",
+          "description": "A unit with this magic standard can re-roll its charge distance dice.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 55
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ms_wb",
+          "name": "Wailing Banner",
+          "description": "A unit with this banner causes Terror in its enemies.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 50
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_terror"
+            }
+          ]
+        },
+        {
+          "id": "ms_rg",
+          "name": "Ranger's Standard",
+          "description": "A unit with the Ranger's Standard has the Strider special rule.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 50
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_strider",
+              "textInputToAdd": "All"
+            }
+          ]
+        },
+        {
+          "id": "ms_rz",
+          "name": "Razor Standard",
+          "description": "Models in a unit with the Razor Standard have the Armour Piercing special rule.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 45
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_armourPiercing"
+            }
+          ]
+        },
+        {
+          "id": "ms_wr",
+          "name": "War Banner",
+          "description": "A unit with this banner adds +1 to combat resolution.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 35
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ms_sw",
+          "name": "Banner of Swiftness",
+          "description": "Models in a unit with the Banner of Swiftness have +1 to their Movement characteristic.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_mv",
+              "value": 1
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "ms_lb",
+          "name": "Lichebone Pennant",
+          "description": "Models in a unit with the Lichebone Pennant have Magic Resistance (1).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            },
+            {
+              "id": "stat_mr",
+              "value": 1
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ms_dp",
+          "name": "Standard of Discipline",
+          "description": "Models in a unit with the Standard of Discipline have +1 Leadership, but cannot use the General's Inspiring Presence special rule.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            }
+          ],
+          "statChanges": [
+            {
+              "id": "stat_ld",
+              "value": 1,
+              "displayAsConditional": true,
+              "conditionalDescription": "* Cannot use the General's Inspiring Presence special rule."
+            }
+          ],
+          "specialRules": []
+        },
+        {
+          "id": "ms_ef",
+          "name": "Banner of Eternal Flame",
+          "description": "Models in a unit with the Banner of Eternal Flame have Flaming Attacks.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_flamingAttacks"
+            }
+          ]
+        },
+        {
+          "id": "ms_gp",
+          "name": "Gleaming Pennant",
+          "description": "One use only. A unit with the Gleaming Pennant can re-roll its first failed Leadership test.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ms_sb",
+          "name": "Scarecrow Banner",
+          "description": "A unit with the Scarecrow Banner causes Fear in models with the Fly special rule.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_fear",
+              "displayAsConditional": true,
+              "conditionalDescription": "* Causes fear in models with the Fly special rule."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_ac",
+      "categoryOptionsId": "oc_mi",
+      "name": "Arcane Items",
+      "requiredKeywords": ["kw_wizard"],
+      "optionItems": [
+        {
+          "id": "ac_ba",
+          "name": "Book of Ashur",
+          "description": "The bearer receives a +1 bonus on attempts to cast and dispel.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 70
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_fs",
+          "name": "Feedback Scroll",
+          "description": "One use only. When an enemy spell has been cast, a Wizard who has a Feedback Scroll can read it instead of attempting to dispel the spell.\nThe spell is cast as normal, but, after the spell has been resolved, roll a dice for every dice used to cast the spell. The casting Wizard takes a wound for every result of 5+ rolled, with no armour saves allowed.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 50
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_le",
+          "name": "Scroll of Leeching",
+          "description": "One use only. When an enemy spell has been cast, a Wizard who has a Scroll of Leeching can read it instead of attempting to dispel the spell. The spell is cast as normal, but, after the spell has been resolved, the bearer of the scroll adds a number of dispel dice to his pool equal to the number of dice used to cast the spell (remember that your dispel pool cannot exceed 12 dice).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 50
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_hx",
+          "name": "Sivejir's Hex Scroll",
+          "description": "One use only. When an enemy spell has been cast, a Wizard who has a Hex Scroll can read it instead of attempting to dispel the spell. The spell is cast as normal, but a portion of the spell's energy is transformed and redirected at the caster. The enemy wizard can resist the spell's effects by rolling equal to or under his wizard level on a D6. If he fails, an amphibian transformation takes hold and he becomes a small, slimy toad! Whilst transformed, the wizard cannot channel or cast spells, all of his magic items and mundane equipment (armour, weapons, etc.) temporarily stop working and all of his characteristics are reduced to 1 (except for his wounds, which are unaffected). His controlling player can roll a D6 at the start of each of his subsequent magic phases; the spell dissipates on a roll of 4+ and the wizard returns to his normal form (but still attempts to eat flies for several days afterward).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 50
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_ps",
+          "name": "Power Scroll",
+          "description": "One use only. A Power Scroll can be used when the Wizard makes a casting attempt During that casting attempt, any roll of a double will cause irresistible force (and a miscast).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 35
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_wj",
+          "name": "Wand of Jet",
+          "description": "One use only. The bearer can increase one of his casting results by an additional +D6, after other casting dice have been rolled. This extra power dice can contribute to casting a spell with irresistible force (and a miscast).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 35
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_fr",
+          "name": "Forbidden Rod",
+          "description": "One use only. The forbidden rod adds +D6 dice to the power pool at the start of the caster's own magic phase, but also inflicts D3 wounds on the bearer (with no armour saves allowed).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 35
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_ts",
+          "name": "Trickster's Shard",
+          "description": "One use only. Declare you are using this item at the start of one of your magic phases. For the duration of the phase, when one of the bearer's spells is dispelled by an enemy wizard, roll a D6. On a 5+, that wizard suffers a wound with no armour saves allowed.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_er",
+          "name": "Earthing Rod",
+          "description": "One use only. If the wizard rolls on the miscast table he can re-roll the result.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_ds",
+          "name": "Dispel Scroll",
+          "description": "One use only. When an enemy spell has been cast, a wizard who has a dispel scroll can read it instead of attempting to dispel the spell by using dispel dice. This automatically dispels the enemy spell; no dice roll is required. Note that even a dispel scroll will not help if the spell has been cast with irresistible force. Note also that a dispel scroll cannot be used to dispel spells that remain in play other than at the moment they are cast.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_pw",
+          "name": "Power Stone",
+          "description": "One use only. The Wizard can declare that he is using the power stone immediately before casting a spell If he does so, two extra dice are added to the power dice that he is going to roll (you still need to roll at least one dice from the power pool).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 20
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_ss",
+          "name": "Sceptre of Stability",
+          "description": "One use only. The bearer can choose to increase one of his dispel results by an additional +D6, after his other dispel dice have been rolled. This extra dispel dice can contribute to dispelling with irresistible force.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_cs",
+          "name": "Channelling Staff",
+          "description": "The Wizard adds +1 to all of his channeling attempts.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ac_sh",
+          "name": "Scroll of Shielding",
+          "description": "One use only. When an enemy spell has been cast, a Wizard who has a Scroll of Shielding can read it instead of attempting to dispel the spell. The spell is cast as normal, but the target of the spell is granted a 4+ ward save against any wounds caused by the spell.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        }
+      ]
+    },
+    {
+      "id": "options_ei",
+      "categoryOptionsId": "oc_mi",
+      "name": "Enchanted Items",
+      "optionItems": [
+        {
+          "id": "ei_wh",
+          "name": "Wizarding Hat",
+          "description": "The wearer is treated as being a Level 2 Wizard who can use a randomly chosen spell lore. However, he also has the Stupidity special rule.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 100
+            },
+            {
+              "id": "stat_wz",
+              "value": 2
+            },
+            {
+              "id": "stat_sc",
+              "value": 2
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_stupidity"
+            }
+          ],
+          "keyword": ["kw_wizard"]
+        },
+        {
+          "id": "ei_ff",
+          "name": "Fozzrik's Folding Fortress",
+          "description": "After deployment zones have been agreed, but before the armies have been deployed, place a watchtower building (or scratch-built structure of a similar size) in your deployment zone to represent the Folding Fortress. This is treated as a standard building (see page 126 for details).\nIf you do not have a suitable building to place, you cannot use Fozzrik's Folding Fortress.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 100
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ei_ac",
+          "name": "Arabyan Carpet",
+          "description": "Infantry or monstrous infantry models on foot only. The owner of this magical carpet has the Fly special rule. However, he cannot join units.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 50
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_fly",
+              "pairedWithUnitCategories": ["uc_in", "uc_mi"]
+            }
+          ]
+        },
+        {
+          "id": "ei_cc",
+          "name": "Crown of Command",
+          "description": "The bearer of the Crown of Command has the Stubborn special rule.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 35
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_stubborn"
+            }
+          ]
+        },
+        {
+          "id": "ei_hp",
+          "name": "Healing Potion",
+          "description": "One use only. The Healing Potion can be drunk at the start of the controlling player's turn. The imbiber immediately recovers D6 Wounds lost in the battle.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 35
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ei_ft",
+          "name": "Featherfor Torc",
+          "description": "Flying creatures (and their riders) must re-roll successful rolls to hit against the bearer (and any unit he is with) in close combat.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 35
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ei_rr",
+          "name": "Ruby Ring of Ruin",
+          "description": "Bound spell (power level 3). The Ruby Ring of Ruin contains the Fireball spell (see the Lore of Fire).",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_boundSpell",
+              "specialRuleValue": 3,
+              "attachedOptions": ["loreOfFire_fb"]
+            }
+          ]
+        },
+        {
+          "id": "ei_ee",
+          "name": "The Terrifying Mask of Eee!",
+          "description": "The wearer of this mask causes Terror. However, other models can never use his Leadership.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 25
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_terror"
+            }
+          ]
+        },
+        {
+          "id": "ei_ps",
+          "name": "Potion of Strength",
+          "description": "One use only. The Potion of Strength can be drunk at the start of any player's turn. The imbiber has +3 Strength until the end of the turn.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 20
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ei_pt",
+          "name": "Potion of Toughness",
+          "description": "One use only. The Potion of Toughness can be drunk at the start of any player's turn. The imbiber has +3 Toughness until the end of the turn.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 20
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ei_ts",
+          "name": "The Other Trickter's Shard",
+          "description": "Models in base contact with the bearer (friends and foes) must re-roll successful ward saves.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 15
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ei_ii",
+          "name": "Ironcurse Icon",
+          "description": "The character (and any unit he is with) gain a 6+ ward save against war machine weapons.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            },
+            {
+              "id": "stat_wd",
+              "value": 6,
+              "displayAsConditional": true,
+              "conditionalDescription": "* Against war machine weapons."
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ei_pf",
+          "name": "Potion of Fooldhardiness",
+          "description": "One use only. The Potion of Foolhardiness can be drunk at the start of any player's turn. The imbiber has the Immune to Psychology and the Devastating Charge special rules until the end of the player turn.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "ei_sp",
+          "name": "Potion of Speed",
+          "description": "One use only. The Potion of Speed can be drunk at the start of any player's turn. The imbiber has +3 Initiative until the end of the turn.",
+          "stats": [
+            {
+              "id": "stat_pt",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        }
+      ]
+    },
+    {
+      "id": "options_cg",
+      "categoryOptionsId": "oc_cg",
+      "name": "Command Group",
+      "optionItems": [
+        {
+          "id": "cg_ch",
+          "name": "Champion",
+          "description": "",
+          "stats": [],
+          "statChanges": [],
+          "specialRules": [],
+          "replaceModelInUnitDisplay": true,
+          "optionGroupsAvailable": [
+            "options_mw",
+            "options_ma",
+            "options_ms",
+            "options_ta",
+            "options_ei"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_loreOfFire",
+      "categoryOptionsId": "oc_ml",
+      "name": "The Lore of Fire",
+      "specialRules": [
+        {
+          "id": "sr_kindleflame"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "loreOfFire_fb",
+          "name": "Fireball",
+          "description": "Fireball is a magic missile with a range of 24\" and causes D6 Strength 4 hits. The Wizard can choose to extend the range of this spell to 36\" and the number of hits to 2D6. If he does so, the casting value is increased to 10+. Alternatively, the Wizard can choose to extend the range of this spell to 48\" and the number of hits to 3D6. If he does so, the casting value is increased to 18+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 0
+            },
+            {
+              "id": "stat_cv",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicMissile"
+            }
+          ]
+        },
+        {
+          "id": "loreOfFire_fc",
+          "name": "Cascading Fire-Cloak",
+          "description": "Remains in play. Cascading Fire-Cloak is an augment spell cast upon the Wizard and his unit (if any). At the end of each Magic phase, any enemy unit in base contact with the target immediately suffers 2D6 Strength 4 hits.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 1
+            },
+            {
+              "id": "stat_cv",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_remainsInPlay"
+            },
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfFire_sr",
+          "name": "Flaming Sword of Rhuin",
+          "description": "Flaming Sword of Rhuin is an augment spell with a range of 24\". The target unit has a +1 bonus when rolling to wound with all shooting and close combat attacks until the start of the caster's next Magic phase. The target unit also counts as having both magical attacks and the Flaming Attacks special rule. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 11+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 2
+            },
+            {
+              "id": "stat_cv",
+              "value": 8
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfFire_bh",
+          "name": "The Burning Head",
+          "description": "The Burning Head is a direct damage spell. Extend a straight line, 18\" in length, within the caster's front arc and directly away from his base. Each model in the way (determined as for a bouncing cannonball) suffers a Strength 4 hit. A unit that suffers one or more casualties from the Burning Head must take a Panic test. The Wizard can choose to extend the Burning Head's 'bounce' to 36\". If he does so, the casting value is increased to 13+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 3
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        },
+        {
+          "id": "loreOfFire_pb",
+          "name": "The Piercing Bolts of Burning",
+          "description": "Piercing Bolts of Burning is a magic missile with a range of 24\" and causes D3 Strength 4 hits for each rank of five or more models in the target unit. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 13+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 4
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicMissile"
+            }
+          ]
+        },
+        {
+          "id": "loreOfFire_ff",
+          "name": "Fulminating Flame Cage",
+          "description": "Fulminating Flame Cage is a hex spell with a range of 24\". The target unit immediately suffers D6 Strength 4 hits. In addition, if the target unit moves for any reason, every model in the unit suffers an immediate Strength 4 hit and the spell ends. If the unit does not move, Fulminating Flame Cage automatically ceases at the start of the caster's next Magic phase. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 14+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 5
+            },
+            {
+              "id": "stat_cv",
+              "value": 11
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            }
+          ]
+        },
+        {
+          "id": "loreOfFire_fs",
+          "name": "Flame Storm",
+          "description": "Flame Storm is a direct damage spell. Place the small round template anywhere within 30\" of the Wizard - it then scatters D6\". All models hit by the template suffer a Strength 4 hit. The Wizard can choose to create a larger conflagration, using the large template rather than the small template. If he does so, the casting value is increased to 16+ and the template scatters 2D6\" rather than D6\".",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 6
+            },
+            {
+              "id": "stat_cv",
+              "value": 13
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_loreOfBeasts",
+      "categoryOptionsId": "oc_ml",
+      "name": "The Lore of Beasts",
+      "specialRules": [
+        {
+          "id": "sr_wildheart"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "loreOfBeasts_ww",
+          "name": "Wyssan's Wildform",
+          "description": "Wyssan's Wildform is an augment spell with a range of 12\". The target unit gains +1 Strength and +1 Toughness until the start of the caster's next Magic phase. The Wizard can choose to extend the range of this spell to 24\". If he does so, the casting value is increased to 13+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 0
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfBeasts_fd",
+          "name": "The Flock of Doom",
+          "description": "The Flock of Doom is a magic missile with a range of 24\" and causes 2D6 Strength 2 hits. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 8+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 1
+            },
+            {
+              "id": "stat_cv",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicMissile"
+            }
+          ]
+        },
+        {
+          "id": "loreOfBeasts_ip",
+          "name": "Pann's Impenetrable Pelt",
+          "description": "Pann's Impenetrable Pelt is an augment spell that is cast upon the Wizard or another friendly character within 12\". The target gains +3 Toughness until the start of the caster's next Magic phase. The Wizard can choose to instead have his spell target all friendly characters within 12\" (including himself). If he does so, the casting value is increased to 16+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 2
+            },
+            {
+              "id": "stat_cv",
+              "value": 8
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfBeasts_as",
+          "name": "The Amber Spear",
+          "description": "The Amber Spear is a magic missile with a range of 24\". It inflicts a single Strength 6 hit that causes Multiple Wounds (D3) and then penetrates ranks in the same manner as a shot from a bolt thrower if the first model is slain - the Strength of the hit is reduced by 1 for each subsequent rank. Armour saves are not permitted against wounds caused by the Amber Spear. The Wizard can attempt to call forth a larger, deadlier spear that inflicts a Strength 10 hit, causing Multiple Wounds (D6). If he does so, the casting value is increased to 15+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 3
+            },
+            {
+              "id": "stat_cv",
+              "value": 9
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicMissile"
+            }
+          ]
+        },
+        {
+          "id": "loreOfBeasts_ca",
+          "name": "The Curse of Anraheir",
+          "description": "The Curse of Anraheir is a hex with a range of 36\". The target unit suffers a -1 penalty to its To Hit rolls (to both its shooting and close combat attacks) until the start of the caster's next Magic phase. In addition, the unit treats all terrain (other than impassable terrain) as dangerous terrain and will fail Dangerous Terrain tests on a 1 or 2, rather than a 1. The Wizard can choose to extend the range of this spell to 72\". If he does so, the casting value is increased to 13+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 4
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            }
+          ]
+        },
+        {
+          "id": "loreOfBeasts_sb",
+          "name": "The Savage Beast of Horros",
+          "description": "The Savage Beast of Horros is an augment spell with a range of 12\" and is cast on a friendly character, which can be the Wizard himself. The model gains +3 Strength and +3 Attacks until the start of the caster's next Magic phase. The Wizard can choose to instead have his spell target all friendly characters within 12\" (including himself). If he does so, the casting value is increased to 20+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 5
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfBeasts_tk",
+          "name": "Transformation of Kadon",
+          "description": "Remains in play. The Transformation of Kadon is an augment spell can only be cast upon the Wizard, and only if he is on foot. Whilst the spell is in effect, the Wizard transmogrifies himself into one of the following monsters: Feral Manticore, Black Hydra, or Horned Dragon. If the Wizard is in a unit, he can remain within the unit, even though he is now technically a monster (although you may have to reorder the unit a little to make him fit - see page 98 for some guidance). If he cannot be placed because there is not enough room, the spell does not work. Whilst transformed, the Wizard cannot channel or cast spells, and all of his magic items and mundane equipment (armour, weapons, etc.) temporarily stop working. Any wounds suffered by the Wizard are carried over between transformations. The Wizard can choose to cast a more powerful version of the spell, and become a Mountain Chimera or a Great Fire Dragon. If he does so, the casting value increases to 20+. Profiles for these monsters can be found at the end of the Bestiary.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 6
+            },
+            {
+              "id": "stat_cv",
+              "value": 16
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            },
+            {
+              "id": "sr_remainsInPlay"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_loreOfMetal",
+      "categoryOptionsId": "oc_ml",
+      "name": "The Lore of Metal",
+      "specialRules": [
+        {
+          "id": "sr_metalshifting"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "loreOfMetal_sd",
+          "name": "Searing Doom",
+          "description": "Searing Doom is a magic missile with a range of 24\" and causes D6 hits. The Wizard can choose to have the spell instead inflict 2D6 hits. If he does so, the casting value is increased to 20+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 0
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicMissile"
+            }
+          ]
+        },
+        {
+          "id": "loreOfMetal_pr",
+          "name": "Plague of Rust",
+          "description": "Plague of Rust is a hex with a range of 24\". The target's armour save is lowered by one point for the rest of the game (e.g. a model with light armour and shield will only have a 6+ save). Plague of Rust can be repeatedly cast on the same target, reducing its armour save by a further -1 each time. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 10+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 1
+            },
+            {
+              "id": "stat_cv",
+              "value": 7
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            }
+          ]
+        },
+        {
+          "id": "loreOfMetal_eb",
+          "name": "Enchanted Blades of Aiban",
+          "description": "Enchanted Blades of Aiban is an augment spell with a range of 24\". The target unit has a +1 bonus when rolling to hit with all shooting and close combat attacks until the start of the caster's next Magic phase. All of their attacks also count as both magical attacks and have the Armour Piercing special rule. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 12+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 2
+            },
+            {
+              "id": "stat_cv",
+              "value": 9
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfMetal_gr",
+          "name": "Glittering Robe",
+          "description": "Glittering Robe is an augment spell with a range of 12\". The target unit has the Scaly Skin (5 +) special rule until the start of the caster's next Magic phase. The Wizard can choose to instead have his spell target all friendly units within 12\". If he does so, the casting value is increased to 16+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 3
+            },
+            {
+              "id": "stat_cv",
+              "value": 9
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfMetal_gg",
+          "name": "Gehenna's Golden Hounds",
+          "description": "Gehenna's Golden Hounds is a direct damage spell with a range of 12\". Choose a single enemy model within range - it suffers D6 hits. This spell can be used to single out a character in a unit, although the character is allowed to make a \"Look Out Sir!\" roll for each of the hits (representing his comrades defending him from the hounds). The Wizard can choose to extend the range of this spell to 24\". If he does so, the casting value is increased to 12+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 4
+            },
+            {
+              "id": "stat_cv",
+              "value": 9
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        },
+        {
+          "id": "loreOfMetal_tl",
+          "name": "Transmutation of Lead",
+          "description": "Transmutation of Lead is a hex with a range of 24\". The target suffers a -1 penalty to its Weapon Skill, Ballistic Skill and armour saves until the start of the caster's next Magic phase. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 15+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 5
+            },
+            {
+              "id": "stat_cv",
+              "value": 12
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            }
+          ]
+        },
+        {
+          "id": "loreOfMetal_ft",
+          "name": "Final Transmutation",
+          "description": "Final Transmutation is a direct damage spell with a range of 18 -Roll a D6 for every model in the target unit - on a 5+ it has been turned to gold and is removed as a casualty, with no saves of any kind allowed. Models with more than one wound on their profile are only affected on a roll of 6.\nIn addition, any enemy unit within 12\" of the target at the start of their following turn (including the target itself) must test for Stupidity in order to overcome the lure of the riches that have appeared in their vicinity. The Wizard can choose to extend the range of this spell to 36\". If he does so, the casting value of the Final Transmutation is increased to 18+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 6
+            },
+            {
+              "id": "stat_cv",
+              "value": 15
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_loreOfLight",
+      "categoryOptionsId": "oc_ml",
+      "name": "The Lore of Light",
+      "specialRules": [
+        {
+          "id": "sr_exorcism"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "loreOfLight_bg",
+          "name": "Shem's Burning Gaze",
+          "description": "Shem's Burning Gaze is a magic missile with a range of 24\" and causes D6 Strength 4 hits (which count as Flaming Attacks). The Wizard can choose to extend the range of this spell to 48\" and increase the Strength from 4 to 6. If he does so, the casting value is increased to 15+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 0
+            },
+            {
+              "id": "stat_cv",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicMissile"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLight_pp",
+          "name": "Pha's Protection",
+          "description": "Pha's Protection is an augment spell with a range of 24\". All attacks against the target unit (shooting or close combat) suffer a -1 penalty to hit until the start of the caster's next Magic phase. Shooting attacks that do not use Ballistic Skill must roll 4+ on a D6 before filing, or the shot(s) is lost. The Wizard can choose to have this spell affect all friendly units within 12\". If he does so, the casting value is increased to 12+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 1
+            },
+            {
+              "id": "stat_cv",
+              "value": 6
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLight_sp",
+          "name": "The Speed of Light",
+          "description": "The Speed of Light is an augment spell with a range of 24\". The target unit has Weapon Skill 10 and Initiative 10 until the start of the caster's next Magic phase. The Wizard can choose to instead have His spell affect all friendly units within 12\". If he does so, the casting value is increased to 16+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 2
+            },
+            {
+              "id": "stat_cv",
+              "value": 8
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLight_lb",
+          "name": "Light of Battle",
+          "description": "Light of Battle is an augment spell with a range of 12\". If fleeing, the target rallies immediately. Additionally, the target will pass all Leadership tests (regardless of modifiers) until the start of the caster's next Magic phase. The Wizard can instead choose to have his spell target all friendly units within 12\". If he does so, the casting value is increased to 18+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 3
+            },
+            {
+              "id": "stat_cv",
+              "value": 9
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLight_na",
+          "name": "Net of Amyntok",
+          "description": "Net of Amyntok is a hex with a range of 24\". The target unit must pass a Strength test every time it moves (included moving as a charger, fleeing, pursuing, moving compulsorily, etc.) or shoots or casts spells until the start of the caster's next Magic phase. If the test is passed, the target acts normally. If the test is failed, the unit is unable to perform the desired action, remaining in place and taking D6 Strength 4 hits from the net's barbs of light. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 13+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 4
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLight_ba",
+          "name": "Banishment",
+          "description": "Banishment is a magic missile with a range of 24\" - the target suffers 2D6 hits. The Strength of the hits is equal to 4 plus the number of Wizards that know spells from the Lore of Light within 12\" of the caster (not counting the caster himself). Successful ward saves taken against Banishment must be re-rolled. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 13+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 5
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicMissile"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLight_bt",
+          "name": "Birona's Timewarp",
+          "description": "Birona's Timewarp is an augment spell with a range of 12\". The target's Movement is doubled, and its Attacks increased by 1 until the start of the caster's next Magic phase. The unit also gains the Always Strikes First special rule until the start of the caster's next Magic phase. The Wizard can choose to instead have his spell target all friendly units within 12\". If he does so, the casting value is increased to 24+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 6
+            },
+            {
+              "id": "stat_cv",
+              "value": 12
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_loreOfLife",
+      "categoryOptionsId": "oc_ml",
+      "name": "The Lore of Life",
+      "specialRules": [
+        {
+          "id": "sr_lifebloom"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "loreOfLife_eb",
+          "name": "Earth Blood",
+          "description": "Earth Blood is an augment spell that is cast upon the Wizard and his unit (if any). They have the Regeneration (5+) special rule until the start of the caster's next Magic phase.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 0
+            },
+            {
+              "id": "stat_cv",
+              "value": 8
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLife_aw",
+          "name": "Awakening of the Wood",
+          "description": "Awakening of the Wood is a direct damage spell with a range of 18\" and causes D6 Strength 4 hits. If the target is even partially within a forest, the number of hits is increased to 2D6.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 1
+            },
+            {
+              "id": "stat_cv",
+              "value": 6
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLife_fs",
+          "name": "Flesh to Stone",
+          "description": "Flesh to Stone is an augment spell with a range of 24\". The target unit has +2 to its Toughness value until the start of the caster's next Magic phase.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 2
+            },
+            {
+              "id": "stat_cv",
+              "value": 8
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLife_tv",
+          "name": "Throne of Vines",
+          "description": "Remains in play. Throne of Vines is an augment spell cast upon the Wizard. Whilst the spell is in effect, every time the Wizard miscasts, roll a dice. On a 2+, the miscast is ignored.\nFurthermore, the Wizard's castings of the following spells have the additional benefits given below (it does not change the effects of spells that have already been cast):\n• Earth Blood grants Regeneration (4+) rather than Regeneration (5+).\n• Awakening of the Wood instead inflicts hits at Strength 6.\n• Flesh to Stone instead adds +4 Toughness.\n• Regrowth instead restores D6 +1 wounds worth of models.\n• Shield of Thorns instead hits at Strength 4.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 3
+            },
+            {
+              "id": "stat_cv",
+              "value": 8
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            },
+            {
+              "id": "sr_remainsInPlay"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLife_st",
+          "name": "Shield of Thorns",
+          "description": "Remains in play. Shield of Thorns is an augment spell with a range of 24\". At the end of each Magic phase, any enemy unit in base contact with the target suffers 2D6 Strength 3 hits.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 4
+            },
+            {
+              "id": "stat_cv",
+              "value": 9
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            },
+            {
+              "id": "sr_remainsInPlay"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLife_rg",
+          "name": "Regrowth",
+          "description": "Regrowth is an augment spell with a range of 24\". The target unit instantly recovers D3+1 Wounds' worth of models slain earlier in the battle (cavalry count as 2 models). The wounds in the unit are regained in a strict order. First, the champion is resurrected, and then the musician (standard bearers are never resurrected - if the bearer's been slain, the banner is gone for good), displacing rank-and-file models as required. Then rank-and-file models with multiple Wounds (including command figures) are healed to their starting value. Finally, any remaining wounds resurrect rank and file models (in the case of multiple wound rank and file models, the first resurrected models must be fully healed before another can be resurrected, and so on). These models are added to the front rank until it reaches at least five models - additional models can then be added to the front or rear rank. If the unit already has more than one rank, models can only be added to the rear rank. Regrowth cannot take a unit beyond its starting size, and cannot be used to heal characters or their mounts. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value of Regrowth is increased to 15+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 5
+            },
+            {
+              "id": "stat_cv",
+              "value": 12
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfLife_db",
+          "name": "The Dweller's Below",
+          "description": "The Dwellers Below is a direct damage spell with a range of 12 -Every model in the target unit must pass a Strength test or be slain, with no saves of any kind allowed. The Wizard can choose to extend the range of this spell to 24\". If he does so, the casting value is increased to 21+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 6
+            },
+            {
+              "id": "stat_cv",
+              "value": 18
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_loreOfHeavens",
+      "categoryOptionsId": "oc_ml",
+      "name": "The Lore of Heavens",
+      "specialsRules": [
+        {
+          "id": "sr_roilingSkies"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "loreOfHeavens_ib",
+          "name": "Iceshard Blizzard",
+          "description": "Iceshard Blizzard is a hex with a range of 24\". The target suffers a -1 modifier to all To Hit rolls (both shooting and close combat) and to its Leadership until the start of the caster's next Magic phase. Shooting attacks that do not use Ballistic Skill must roll 4+ on a D6 before firing, or the shot(s) is lost The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 10+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 0
+            },
+            {
+              "id": "stat_cv",
+              "value": 7
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            }
+          ]
+        },
+        {
+          "id": "loreOfHeavens_hc",
+          "name": "Harmonic Convergence",
+          "description": "Harmonic Convergence is an augment spell with a range of 24\". Until the start of the caster's next Magic phase, the target re-rolls all To Hit, To Wound and armour save rolls of 1. The caster can choose to have this spell target all friendly units within 12\". If he does so, the casting value is increased to 12+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 1
+            },
+            {
+              "id": "stat_cv",
+              "value": 6
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfHeavens_wb",
+          "name": "Wind Blast",
+          "description": "Wind Blast is a magic missile with a range of 24\". The target is pushed' D3+1\" directly away from the caster (it does not change feeing). If the target unit comes into contact with impassable terrain it stops 1\" away and suffers D6 Strength 3 hits. If the target unit comes into contact with another unit it stops 1\" away and both units suffer D6 Strength 3 hits. Targets that cannot move are not pushed back at all, but still suffer D6 Strength 3 hits. The caster can choose to summon a more powerful wind that pushes the target back D6+2\", rather than D3 +1\". If he does so, the casting value is increased to 14+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 2
+            },
+            {
+              "id": "stat_cv",
+              "value": 7
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicMissile"
+            }
+          ]
+        },
+        {
+          "id": "loreOfHeavens_mw",
+          "name": "Curse of the Midnight Wind",
+          "description": "Curse of the Midnight Wind is a hex with a range of 24\". The target must re-roll all 6s when rolling to hit, to wound and armour saves until the start of the caster's next Magic phase. The Wizard can instead choose to have this spell target all enemy units within 12\". If he does so, the casting value is 20+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 3
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            }
+          ]
+        },
+        {
+          "id": "loreOfHeavens_ut",
+          "name": "Urannon's Thunderbolt",
+          "description": "Urannon's Thunderbolt is a magic missile with a range of 24\" that causes D6 Strength 6 hits. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 13+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 4
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicMissile"
+            }
+          ]
+        },
+        {
+          "id": "loreOfHeavens_cc",
+          "name": "Comet of Casandora",
+          "description": "This spell is cast upon any fixed point on the tabletop. Place a suitable marker over the exact spot affected - a small coin is ideal for this. For as long as the spell lasts, the player rolls a D6 at the start of each player's following Magic phase. On a score of 1-3 nothing happens, but place another marker on the first. On the score of a 4-6 the comet strikes the spot. All units from either side that are within 2D6\" are struck by the comet. Each unit struck by the comet takes 2D6 hits, +1 hit for each marker on the comet, at a Strength equal to 4 plus the number of markers on the comet. Once cast, the comet cannot be dispelled. The Wizard can choose to cast this spell so that the comet starts with two counters rather than one, and two counters are added each time the comet fails to land. If he does so, the casting value is increased to 24+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 5
+            },
+            {
+              "id": "stat_cv",
+              "value": 12
+            }
+          ],
+          "statChanges": [],
+          "specialRules": []
+        },
+        {
+          "id": "loreOfHeavens_cl",
+          "name": "Chain Lightning",
+          "description": "Chain Lightning is a direct damage spell with a range of 24\". Chain Lightning causes D6 Stength 6 hits. Once the damage has been resolved, roll a D6: on a 3 or more, choose an enemy within 6\" of the initial target - the lightning leaps to that unit which suffers D6 Strength 6 hits. Keep rolling for further victims (each within 6\" of the last target struck), until the roll is failed or there are no more viable targets (a unit can only be the target of Chain Lightning once per Magic phase).",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 6
+            },
+            {
+              "id": "stat_cv",
+              "value": 15
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_loreOfShadow",
+      "categoryOptionsId": "oc_ml",
+      "name": "The Lore of Shadow",
+      "specialsRules": [
+        {
+          "id": "sr_smokeAndMirrors"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "loreOfShadow_mm",
+          "name": "Melkoth's Mystifying Miasma",
+          "description": "Melkoth's Mystifying Miasma is a hex with a range of 48\". The target unit's Weapon Skill, Ballistic Skill, Initiative or Movement (you choose which) is reduced by D3 (to a minimum of 1) until the start of the caster's next Magic phase. The Wizard can choose to cast a more powerful version of this spell that instead reduces all four characteristics (don't roll a D3 for each - make one roll and apply it to all four characteristics). If he does so, the casting value of Melkoth's Mystifying Miasma is increased to 10+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 0
+            },
+            {
+              "id": "stat_cv",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            }
+          ]
+        },
+        {
+          "id": "loreOfShadow_ss",
+          "name": "Steed of Shadows",
+          "description": "Steed of Shadows is an augment spell that can be cast on the Wizard or a friendly character within 12\". The target immediately makes a move using the Fly special rule as if it were the Remaining Moves sub-phase.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 1
+            },
+            {
+              "id": "stat_cv",
+              "value": 5
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfShadow_ef",
+          "name": "The Enfeebling Foe",
+          "description": "Remains in play. The Enfeebling Foe is a hex spell with a range of 18\". All models in the target unit have their Strength reduced by D3 (to a minimum of 1) for the duration of the spell. The Wizard can choose to extend the range of this spell to 36\". If he does so, the casting value of the Enfeebling Foe is increased to 13+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 2
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            },
+            {
+              "id": "sr_remainsInPlay"
+            }
+          ]
+        },
+        {
+          "id": "loreOfShadow_wt",
+          "name": "The Withering",
+          "description": "Remains in play. The Withering is a hex with a range of 18\". All models in the target unit have their Toughness reduced by D3 (to a minimum of 1) for the duration of the spell. The Wizard can extend the range of this spell to 36\". If he does so, the casting value is increased to 16+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 3
+            },
+            {
+              "id": "stat_cv",
+              "value": 13
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            },
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfShadow_pp",
+          "name": "The Penumbral Pendulum",
+          "description": "The Penumbral Pendulum is a direct damage spell. Extend a straight line, 6D6\" in length, directly away from the caster. Each model in the way (determined as for a bouncing cannonball) must pass an Initiative test or suffer a Strength 10 hit causing Multiple Wounds (D3). The Wizard can choose to double the Penumbral Pendulum's range (making the distance twice the total rolled). If he does so, the casting value of the spell is increased to 18+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 4
+            },
+            {
+              "id": "stat_cv",
+              "value": 13
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        },
+        {
+          "id": "loreOfShadow_ps",
+          "name": "Pit of Shades",
+          "description": "Pit of Shades is a direct damage spell. Place the small round template anywhere within 24\" - it then scatters D6\". All models underneath the template must pass an Initiative test or be dragged to their DOOM! (remove them as casualties with no saves of any kind allowed). The Wizard can choose to create a vaster portal, using the large template rather than the small template. If he does so, the casting value is increased to 17+ and the template scatters 2D6\" rather than D6\".",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 5
+            },
+            {
+              "id": "stat_cv",
+              "value": 14
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        },
+        {
+          "id": "loreOfShadow_om",
+          "name": "Okkam's Mindrazor",
+          "description": "Okkam's Mindrazor is an augment spell with a range of 18\" and lasts until the start of the caster's next Magic phase. Models in the target unit use their Leadership instead of Strength when rolling to wound with all close combat attacks whilst the spell remains in effect (any Strength bonuses from weapons are ignored). The Wizard can choose to extend the range of this spell to 36\". If he does so, the casting value of Okkam's Mindrazor is increased to 21+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 6
+            },
+            {
+              "id": "stat_cv",
+              "value": 18
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options_loreOfDeath",
+      "categoryOptionsId": "oc_ml",
+      "name": "The Lore of Death",
+      "specialsRules": [
+        {
+          "id": "sr_lifeLeeching"
+        }
+      ],
+      "optionItems": [
+        {
+          "id": "loreOfDeath_ll",
+          "name": "Spirit Leech",
+          "description": "Spirit Leech is a direct damage spell with a range of 12\" that targets a single enemy model (even a character in a unit). Both caster and target roll a D6 and add their respective unmodified Leadership values. For every point the caster wins by, the target suffer a wound, with no armour saves allowed. The Wizard can choose to extend the range of this spell to 24\". If he does so, the casting value is increased to 10+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 0
+            },
+            {
+              "id": "stat_cv",
+              "value": 7
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        },
+        {
+          "id": "loreOfDeath_ad",
+          "name": "Aspect of the Dreadknight",
+          "description": "Aspect of the Dreadknight is an augment spell with a range of 24\". The target unit causes Fear until the start of the caster's next Magic phase. The Wizard can choose to make the target even more horrifying if he wishes, and cause Terror, rather than Fear. If he does so, the casting value is increased to 9+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 1
+            },
+            {
+              "id": "stat_cv",
+              "value": 4
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_augment"
+            }
+          ]
+        },
+        {
+          "id": "loreOfDeath_cl",
+          "name": "The Caress of Laniph",
+          "description": "The Caress of Laniph is a direct damage spell with a range of 12\" that targets a single enemy model (even a character in a unit). If successfully cast, the target suffers a number of hits equal to 2D6 minus his own Strength. Hits from the Caress of Laniph cause a wound on a roll of 4+, with no armour saves allowed. The Wizard can choose to extend the range of this spell to 24\". If he does so, the casting value is increased to 12+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 2
+            },
+            {
+              "id": "stat_cv",
+              "value": 6
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        },
+        {
+          "id": "loreOfDeath_sb",
+          "name": "Soulblight",
+          "description": "Soulblight is a hex spell with a range of 24\". The target has -1 Strength and -1 Toughness (to a minimum of 1) until the start of the caster's next Magic phase. The Wizard can choose to have this spell target all enemy units within 24\" - in which case the casting value is 18+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 3
+            },
+            {
+              "id": "stat_cv",
+              "value": 9
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            }
+          ]
+        },
+        {
+          "id": "loreOfDeath_dd",
+          "name": "Doom and Darkness",
+          "description": "Remains in play. Doom and Darkness is a hex spell with a range of 24\". The target suffers a -3 penalty to its Leadership. The Wizard can choose to extend the range of this spell to 48\". If he does so, the casting value is increased to 13+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 4
+            },
+            {
+              "id": "stat_cv",
+              "value": 10
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_hex"
+            },
+            {
+              "id": "sr_remainsInPlay"
+            }
+          ]
+        },
+        {
+          "id": "loreOfDeath_fb",
+          "name": "The Fate of Bjuna",
+          "description": "The Fate of Bjuna is a direct damage spell with a range of 12\" and targets a single enemy model (even a character in a unit). The target suffers a number of hits equal to 2D6 minus his own Toughness. Hits from the Fate of Bjuna cause a wound on a roll of 2+, with no armour saves allowed. If the target survives, he is subject to Stupidity for the remainder of the game.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 5
+            },
+            {
+              "id": "stat_cv",
+              "value": 13
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_directDamage"
+            }
+          ]
+        },
+        {
+          "id": "loreOfDeath_ps",
+          "name": "The Purple Sun of Xereus",
+          "description": "Remains in play. The Purple Sun is a magical vortex that uses the small round template. Once the template is placed, the player then nominates the direction in which the Purple Sun will move. To determine how many inches the template moves, roll an artillery dice and multiply the result by 3. Any model touched by the template must pass an Initiative test or be slain outright with no saves of any kind allowed. If the result on the artillery dice is a misfire, centre the template on the caster and roll a scatter dice and a D6. The template moves the number of inches equal to the result of the D6, in the direction shown on the scatter dice (if you roll a Hit!, use the little arrow shown on the Hit! symbol). In either event, in subsequent turns, the Purple Sun travels in a random direction and moves a number of inches equal to the roll on an artillery dice. If a misfire is rolled in subsequent turns, the Purple Sun collapses in upon itself and is removed. A particularly brave Wizard can infuse the Purple Sun of Xereus with more power, so that it uses the large round template instead. If he does so, the casting value is 25+.",
+          "stats": [
+            {
+              "id": "stat_ln",
+              "value": 6
+            },
+            {
+              "id": "stat_cv",
+              "value": 15
+            }
+          ],
+          "statChanges": [],
+          "specialRules": [
+            {
+              "id": "sr_magicalVortex"
+            },
+            {
+              "id": "sr_remainsInPlay"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "unitProfiles": [
+    {
+      "id": "up_blackHydra",
+      "name": "Black Hydra",
+      "unitCategory": "uc_mo",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 6
+        },
+        {
+          "id": "stat_ws",
+          "value": 4
+        },
+        {
+          "id": "stat_bs",
+          "value": 0
+        },
+        {
+          "id": "stat_st",
+          "value": 5
+        },
+        {
+          "id": "stat_to",
+          "value": 5
+        },
+        {
+          "id": "stat_wo",
+          "value": 5
+        },
+        {
+          "id": "stat_in",
+          "value": 2
+        },
+        {
+          "id": "stat_at",
+          "value": 7
+        },
+        {
+          "id": "stat_ld",
+          "value": 8
+        },
+        {
+          "id": "stat_as",
+          "value": 4
+        }
+      ],
+      "specialRules": [
+        {
+          "id": "sr_largeTarget"
+        },
+        {
+          "id": "sr_terror"
+        },
+        {
+          "id": "sr_scalySkin",
+          "specialRuleValue": 4
+        },
+        {
+          "id": "sr_regeneration"
+        },
+        {
+          "id": "sr_breathWeapon",
+          "specialRuleValue": 4
+        }
+      ]
+    },
+    {
+      "id": "up_mountainChimera",
+      "name": "Mountain Chimera",
+      "unitCategory": "uc_mo",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 6
+        },
+        {
+          "id": "stat_ws",
+          "value": 7
+        },
+        {
+          "id": "stat_bs",
+          "value": 0
+        },
+        {
+          "id": "stat_st",
+          "value": 7
+        },
+        {
+          "id": "stat_to",
+          "value": 7
+        },
+        {
+          "id": "stat_wo",
+          "value": 10
+        },
+        {
+          "id": "stat_in",
+          "value": 5
+        },
+        {
+          "id": "stat_at",
+          "value": 0
+        },
+        {
+          "id": "stat_ld",
+          "value": 6
+        }
+      ],
+      "specialRules": [
+        {
+          "id": "sr_poisonedAttacks"
+        },
+        {
+          "id": "sr_terror"
+        },
+        {
+          "id": "sr_fly"
+        },
+        {
+          "id": "sr_frenzy"
+        },
+        {
+          "id": "sr_randomAttacks",
+          "textInputToAdd": "4D6"
+        },
+        {
+          "id": "sr_breathWeapon",
+          "specialRuleValue": 4
+        }
+      ]
+    },
+    {
+      "id": "up_feralManticore",
+      "name": "Feral Manticore",
+      "unitCategory": "uc_mo",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 6
+        },
+        {
+          "id": "stat_ws",
+          "value": 5
+        },
+        {
+          "id": "stat_bs",
+          "value": 0
+        },
+        {
+          "id": "stat_st",
+          "value": 5
+        },
+        {
+          "id": "stat_to",
+          "value": 5
+        },
+        {
+          "id": "stat_wo",
+          "value": 4
+        },
+        {
+          "id": "stat_in",
+          "value": 5
+        },
+        {
+          "id": "stat_at",
+          "value": 4
+        },
+        {
+          "id": "stat_ld",
+          "value": 5
+        }
+      ],
+      "specialRules": [
+        {
+          "id": "sr_largeTarget"
+        },
+        {
+          "id": "sr_terror"
+        },
+        {
+          "id": "sr_fly"
+        },
+        {
+          "id": "sr_frenzy"
+        },
+        {
+          "id": "sr_killingBlow"
+        }
+      ]
+    },
+    {
+      "id": "up_hornedDragon",
+      "name": "Horned Dragon",
+      "unitCategory": "uc_mo",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 6
+        },
+        {
+          "id": "stat_ws",
+          "value": 5
+        },
+        {
+          "id": "stat_bs",
+          "value": 0
+        },
+        {
+          "id": "stat_st",
+          "value": 5
+        },
+        {
+          "id": "stat_to",
+          "value": 6
+        },
+        {
+          "id": "stat_wo",
+          "value": 5
+        },
+        {
+          "id": "stat_in",
+          "value": 4
+        },
+        {
+          "id": "stat_at",
+          "value": 4
+        },
+        {
+          "id": "stat_ld",
+          "value": 7
+        },
+        {
+          "id": "stat_as",
+          "value": 4
+        }
+      ],
+      "specialRules": [
+        {
+          "id": "sr_largeTarget"
+        },
+        {
+          "id": "sr_terror"
+        },
+        {
+          "id": "sr_fly"
+        },
+        {
+          "id": "sr_scalySkin",
+          "specialRuleValue": 4
+        },
+        {
+          "id": "sr_breathWeapon",
+          "specialRuleValue": 2
+        }
+      ]
+    },
+    {
+      "id": "up_greatFireDragon",
+      "name": "Great Fire Dragon",
+      "unitCategory": "uc_mo",
+      "stats": [
+        {
+          "id": "stat_mv",
+          "value": 6
+        },
+        {
+          "id": "stat_ws",
+          "value": 8
+        },
+        {
+          "id": "stat_bs",
+          "value": 0
+        },
+        {
+          "id": "stat_st",
+          "value": 8
+        },
+        {
+          "id": "stat_to",
+          "value": 8
+        },
+        {
+          "id": "stat_wo",
+          "value": 8
+        },
+        {
+          "id": "stat_in",
+          "value": 1
+        },
+        {
+          "id": "stat_at",
+          "value": 8
+        },
+        {
+          "id": "stat_ld",
+          "value": 9
+        },
+        {
+          "id": "stat_as",
+          "value": 2
+        }
+      ],
+      "specialRules": [
+        {
+          "id": "sr_terror"
+        },
+        {
+          "id": "sr_fly"
+        },
+        {
+          "id": "sr_scalySkin",
+          "specialRuleValue": 2
+        },
+        {
+          "id": "sr_breathWeapon",
+          "specialRuleValue": 5
+        }
+      ]
+    }
+  ],
+  "compositionCategories": [
+    {
+      "id": "cc_co",
+      "name": "Core"
+    },
+    {
+      "id": "cc_he",
+      "name": "Heroes"
+    },
+    {
+      "id": "cc_lo",
+      "name": "Lords"
+    },
+    {
+      "id": "cc_sp",
+      "name": "Special"
+    },
+    {
+      "id": "cc_ra",
+      "name": "Rare"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "sc_standard",
+      "name": "Standard",
+      "compositionCalculation": "percent",
+      "minCounterValue": 0,
+      "maxCounterValue": 2999,
+      "requiredMinUnits": 3,
+      "requiredKeywords": [
+        {
+          "id": "kw_general",
+          "minValue": 1,
+          "maxValue": 1
+        }
+      ],
+      "compositionCategories": [
+        {
+          "id": "cc_co",
+          "minValue": 25
+        },
+        {
+          "id": "cc_he",
+          "maxValue": 25,
+          "exemptFromRequiredUnitCount": true
+        },
+        {
+          "id": "cc_lo",
+          "maxValue": 25,
+          "exemptFromRequiredUnitCount": true
+        },
+        {
+          "id": "cc_sp",
+          "maxValue": 50,
+          "maxDuplicateUnits": 3
+        },
+        {
+          "id": "cc_ra",
+          "maxValue": 25,
+          "maxDuplicateUnits": 2
+        }
+      ]
+    },
+    {
+      "id": "sc_grandArmy",
+      "name": "Grand Army",
+      "compositionCalculation": "percent",
+      "minCounterValue": 3000,
+      "maxCounterValue": 0,
+      "requiredMinUnits": 3,
+      "requiredKeywords": [
+        {
+          "id": "kw_general",
+          "minValue": 1,
+          "maxValue": 1
+        }
+      ],
+      "compositionCategories": [
+        {
+          "id": "cc_co",
+          "minValue": 25
+        },
+        {
+          "id": "cc_he",
+          "maxValue": 25,
+          "exemptFromRequiredUnitCount": true
+        },
+        {
+          "id": "cc_lo",
+          "maxValue": 25,
+          "exemptFromRequiredUnitCount": true
+        },
+        {
+          "id": "cc_sp",
+          "maxValue": 50,
+          "maxDuplicateUnits": 6
+        },
+        {
+          "id": "cc_ra",
+          "maxValue": 25,
+          "maxDuplicateUnits": 4
+        }
+      ]
+    }
+  ]
+}
